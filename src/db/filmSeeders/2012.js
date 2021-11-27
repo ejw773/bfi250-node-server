@@ -3,6 +3,7 @@ const bfi2012 = [
     title: 'Vertigo',
     director: 'Alfred Hitchcock',
     year: 1958,
+    bfiSet: 'bfi2012',
     bfiRank: 1,
     imdbID: 'tt0052357',
     poster:
@@ -12,6 +13,7 @@ const bfi2012 = [
     title: 'Citizen Kane',
     director: 'Orson Welles',
     year: 1941,
+    bfiSet: 'bfi2012',
     bfiRank: 2,
     imdbID: 'tt0033467',
     poster:
@@ -21,6 +23,7 @@ const bfi2012 = [
     title: 'Tokyo Story',
     director: 'Ozu Yasujiro',
     year: 1953,
+    bfiSet: 'bfi2012',
     bfiRank: 3,
     imdbID: 'tt0046438',
     poster:
@@ -30,6 +33,7 @@ const bfi2012 = [
     title: 'The Rules of the Game',
     director: 'Jean Renoir',
     year: 1939,
+    bfiSet: 'bfi2012',
     bfiRank: 4,
     imdbID: 'tt0031885',
     poster:
@@ -39,6 +43,7 @@ const bfi2012 = [
     title: 'Sunrise',
     director: 'F. W. Murnau',
     year: 1927,
+    bfiSet: 'bfi2012',
     bfiRank: 5,
     imdbID: 'tt0018455',
     poster:
@@ -48,6 +53,7 @@ const bfi2012 = [
     title: '2001: A Space Odyssey',
     director: 'Stanley Kubrick',
     year: 1968,
+    bfiSet: 'bfi2012',
     bfiRank: 6,
     imdbID: 'tt0062622',
     poster:
@@ -57,6 +63,7 @@ const bfi2012 = [
     title: 'The Searchers',
     director: 'John Ford',
     year: 1956,
+    bfiSet: 'bfi2012',
     bfiRank: 7,
     imdbID: 'tt0049730',
     poster:
@@ -66,6 +73,7 @@ const bfi2012 = [
     title: 'Man with a Movie Camera',
     director: 'Dziga Vertov',
     year: 1929,
+    bfiSet: 'bfi2012',
     bfiRank: 8,
     imdbID: 'tt0019760',
     poster:
@@ -75,6 +83,7 @@ const bfi2012 = [
     title: 'The Passion of Joan of Arc',
     director: 'Carl Theodor Dreyer',
     year: 1928,
+    bfiSet: 'bfi2012',
     bfiRank: 9,
     imdbID: 'tt0019254',
     poster:
@@ -84,6 +93,7 @@ const bfi2012 = [
     title: '8½',
     director: 'Federico Fellini',
     year: 1963,
+    bfiSet: 'bfi2012',
     bfiRank: 10,
     imdbID: 'tt0056801',
     poster:
@@ -93,6 +103,7 @@ const bfi2012 = [
     title: 'Battleship Potemkin',
     director: 'Sergei M. Eisenstein',
     year: 1925,
+    bfiSet: 'bfi2012',
     bfiRank: 11,
     imdbID: 'tt0015648',
     poster:
@@ -102,6 +113,7 @@ const bfi2012 = [
     title: 'L’Atalante',
     director: 'Jean Vigo',
     year: 1934,
+    bfiSet: 'bfi2012',
     bfiRank: 12,
     imdbID: 'tt0024844',
     poster:
@@ -111,6 +123,7 @@ const bfi2012 = [
     title: 'Breathless',
     director: 'Jean-Luc Godard',
     year: 1960,
+    bfiSet: 'bfi2012',
     bfiRank: 13,
     imdbID: 'tt0053472',
     poster:
@@ -120,6 +133,7 @@ const bfi2012 = [
     title: 'Apocalypse Now',
     director: 'Francis Ford Coppola',
     year: 1979,
+    bfiSet: 'bfi2012',
     bfiRank: 14,
     imdbID: 'tt0078788',
     poster:
@@ -129,6 +143,7 @@ const bfi2012 = [
     title: 'Late Spring',
     director: 'Ozu Yasujiro',
     year: 1949,
+    bfiSet: 'bfi2012',
     bfiRank: 15,
     imdbID: 'tt0041154',
     poster:
@@ -138,6 +153,7 @@ const bfi2012 = [
     title: 'Au Hasard Balthazar',
     director: 'Robert Bresson',
     year: 1966,
+    bfiSet: 'bfi2012',
     bfiRank: 16,
     imdbID: 'tt0060138',
     poster:
@@ -147,6 +163,7 @@ const bfi2012 = [
     title: 'Seven Samurai',
     director: 'Akira Kurosawa',
     year: 1954,
+    bfiSet: 'bfi2012',
     bfiRank: 17,
     imdbID: 'tt0047478',
     poster:
@@ -156,6 +173,7 @@ const bfi2012 = [
     title: 'Persona',
     director: 'Ingmar Bergman',
     year: 1966,
+    bfiSet: 'bfi2012',
     bfiRank: 17,
     imdbID: 'tt0060827',
     poster:
@@ -165,6 +183,7 @@ const bfi2012 = [
     title: 'Mirror',
     director: 'Andrei Tarkovsky',
     year: 1974,
+    bfiSet: 'bfi2012',
     bfiRank: 19,
     imdbID: 'tt0072443',
     poster:
@@ -174,6 +193,7 @@ const bfi2012 = [
     title: 'Singin’ in the Rain',
     director: 'Gene Kelly/Stanley Donen',
     year: 1951,
+    bfiSet: 'bfi2012',
     bfiRank: 20,
     imdbID: 'tt0045152',
     poster:
@@ -183,6 +203,7 @@ const bfi2012 = [
     title: 'L’Avventura',
     director: 'Michelangelo Antonioni',
     year: 1960,
+    bfiSet: 'bfi2012',
     bfiRank: 21,
     imdbID: 'tt0053619',
     poster:
@@ -192,6 +213,7 @@ const bfi2012 = [
     title: 'The Godfather',
     director: 'Francis Ford Coppola',
     year: 1972,
+    bfiSet: 'bfi2012',
     bfiRank: 21,
     imdbID: 'tt0068646',
     poster:
@@ -201,6 +223,7 @@ const bfi2012 = [
     title: 'Contempt',
     director: 'Jean-Luc Godard',
     year: 1963,
+    bfiSet: 'bfi2012',
     bfiRank: 21,
     imdbID: 'tt0057345',
     poster:
@@ -210,6 +233,7 @@ const bfi2012 = [
     title: 'Rashomon',
     director: 'Akira Kurosawa',
     year: 1950,
+    bfiSet: 'bfi2012',
     bfiRank: 24,
     imdbID: 'tt0042876',
     poster:
@@ -219,6 +243,7 @@ const bfi2012 = [
     title: 'Ordet',
     director: 'Carl Theodor Dreyer',
     year: 1955,
+    bfiSet: 'bfi2012',
     bfiRank: 24,
     imdbID: 'tt0048452',
     poster:
@@ -228,6 +253,7 @@ const bfi2012 = [
     title: 'In the Mood for Love',
     director: 'Wong Kar Wai',
     year: 2000,
+    bfiSet: 'bfi2012',
     bfiRank: 24,
     imdbID: 'tt0118694',
     poster:
@@ -237,6 +263,7 @@ const bfi2012 = [
     title: 'Andrei Rublev',
     director: 'Andrei Tarkovsky',
     year: 1966,
+    bfiSet: 'bfi2012',
     bfiRank: 27,
     imdbID: 'tt0060107',
     poster:
@@ -246,6 +273,7 @@ const bfi2012 = [
     title: 'Mulholland Drive',
     director: 'David Lynch',
     year: 2003,
+    bfiSet: 'bfi2012',
     bfiRank: 28,
     imdbID: 'tt0166924',
     poster:
@@ -255,6 +283,7 @@ const bfi2012 = [
     title: 'Stalker',
     director: 'Andrei Tarkovsky',
     year: 1979,
+    bfiSet: 'bfi2012',
     bfiRank: 29,
     imdbID: 'tt0079944',
     poster:
@@ -264,6 +293,7 @@ const bfi2012 = [
     title: 'Shoah',
     director: 'Claude Lanzmann',
     year: 1985,
+    bfiSet: 'bfi2012',
     bfiRank: 29,
     imdbID: 'tt0090015',
     poster:
@@ -273,6 +303,7 @@ const bfi2012 = [
     title: 'Taxi Driver',
     director: 'Martin Scorsese',
     year: 1976,
+    bfiSet: 'bfi2012',
     bfiRank: 31,
     imdbID: 'tt0075314',
     poster:
@@ -282,6 +313,7 @@ const bfi2012 = [
     title: 'The Godfather, Part II',
     director: 'Francis Ford Coppola',
     year: 1974,
+    bfiSet: 'bfi2012',
     bfiRank: 31,
     imdbID: 'tt0071562',
     poster:
@@ -291,6 +323,7 @@ const bfi2012 = [
     title: 'Bicycle Thieves',
     director: 'Vittorio de Sica',
     year: 1948,
+    bfiSet: 'bfi2012',
     bfiRank: 33,
     imdbID: 'tt0040522',
     poster:
@@ -300,6 +333,7 @@ const bfi2012 = [
     title: 'Psycho',
     director: 'Alfred Hitchcock',
     year: 1960,
+    bfiSet: 'bfi2012',
     bfiRank: 34,
     imdbID: 'tt0054215',
     poster:
@@ -309,6 +343,7 @@ const bfi2012 = [
     title: 'The General',
     director: 'Buster Keaton',
     year: 1926,
+    bfiSet: 'bfi2012',
     bfiRank: 34,
     imdbID: 'tt0017925',
     poster:
@@ -318,6 +353,7 @@ const bfi2012 = [
     title: 'Sátántangó',
     director: 'Bela Tarr',
     year: 1994,
+    bfiSet: 'bfi2012',
     bfiRank: 36,
     imdbID: 'tt0111341',
     poster:
@@ -327,6 +363,7 @@ const bfi2012 = [
     title: 'Metropolis',
     director: 'Fritz Lang',
     year: 1927,
+    bfiSet: 'bfi2012',
     bfiRank: 36,
     imdbID: 'tt0017136',
     poster:
@@ -336,6 +373,7 @@ const bfi2012 = [
     title: 'Jeanne Dielman, 23 quai du Commerce, 1080 Bruxelles',
     director: 'Chantal Akerman',
     year: 1975,
+    bfiSet: 'bfi2012',
     bfiRank: 36,
     imdbID: 'tt0073198',
     poster:
@@ -345,6 +383,7 @@ const bfi2012 = [
     title: 'La Dolce Vita',
     director: 'Federico Fellini',
     year: 1960,
+    bfiSet: 'bfi2012',
     bfiRank: 39,
     imdbID: 'tt0053779',
     poster:
@@ -354,6 +393,7 @@ const bfi2012 = [
     title: 'The 400 Blows',
     director: 'Francois Truffaut',
     year: 1959,
+    bfiSet: 'bfi2012',
     bfiRank: 39,
     imdbID: 'tt0053198',
     poster:
@@ -363,6 +403,7 @@ const bfi2012 = [
     title: 'Pather Panchali',
     director: 'Satyajit Ray',
     year: 1955,
+    bfiSet: 'bfi2012',
     bfiRank: 41,
     imdbID: 'tt0048473',
     poster:
@@ -372,6 +413,7 @@ const bfi2012 = [
     title: 'Journey to Italy',
     director: 'Roberto Rossellini',
     year: 1954,
+    bfiSet: 'bfi2012',
     bfiRank: 41,
     imdbID: 'tt0046511',
     poster:
@@ -381,6 +423,7 @@ const bfi2012 = [
     title: 'Pierrot le Fou',
     director: 'Jean-Luc Godard',
     year: 1965,
+    bfiSet: 'bfi2012',
     bfiRank: 43,
     imdbID: 'tt0059592',
     poster:
@@ -390,6 +433,7 @@ const bfi2012 = [
     title: 'Close-Up',
     director: 'Abbas Kiarostami',
     year: 1989,
+    bfiSet: 'bfi2012',
     bfiRank: 43,
     imdbID: 'tt0100234',
     poster:
@@ -399,6 +443,7 @@ const bfi2012 = [
     title: 'Some Like It Hot',
     director: 'Billy Wilder',
     year: 1959,
+    bfiSet: 'bfi2012',
     bfiRank: 43,
     imdbID: 'tt0053291',
     poster:
@@ -408,6 +453,7 @@ const bfi2012 = [
     title: 'Playtime',
     director: 'Jacques Tati',
     year: 1967,
+    bfiSet: 'bfi2012',
     bfiRank: 43,
     imdbID: 'tt0062136',
     poster:
@@ -417,6 +463,7 @@ const bfi2012 = [
     title: 'Gertrud',
     director: 'Carl Theodor Dreyer',
     year: 1964,
+    bfiSet: 'bfi2012',
     bfiRank: 43,
     imdbID: 'tt0058138',
     poster:
@@ -426,6 +473,7 @@ const bfi2012 = [
     title: 'Histoire(s) du Cinema',
     director: 'Jean-Luc Godard',
     year: 1989,
+    bfiSet: 'bfi2012',
     bfiRank: 48,
     imdbID: 'tt6677224',
     poster:
@@ -435,6 +483,7 @@ const bfi2012 = [
     title: 'The Battle of Algiers',
     director: 'Gillo Pontecorvo',
     year: 1966,
+    bfiSet: 'bfi2012',
     bfiRank: 48,
     imdbID: 'tt0058946',
     poster:
@@ -444,6 +493,7 @@ const bfi2012 = [
     title: 'City Lights',
     director: 'Charlie Chaplin',
     year: 1931,
+    bfiSet: 'bfi2012',
     bfiRank: 50,
     imdbID: 'tt0021749',
     poster:
@@ -453,6 +503,7 @@ const bfi2012 = [
     title: 'Ugetsu Monogatari',
     director: 'Mizoguchi Kenji',
     year: 1953,
+    bfiSet: 'bfi2012',
     bfiRank: 50,
     imdbID: 'tt0046478',
     poster:
@@ -462,6 +513,7 @@ const bfi2012 = [
     title: 'La Jetée',
     director: 'Chris Marker',
     year: 1962,
+    bfiSet: 'bfi2012',
     bfiRank: 50,
     imdbID: 'tt0056119',
     poster:
@@ -471,6 +523,7 @@ const bfi2012 = [
     title: 'North by Northwest',
     director: 'Alfred Hitchcock',
     year: 1959,
+    bfiSet: 'bfi2012',
     bfiRank: 53,
     imdbID: 'tt0053125',
     poster:
@@ -480,6 +533,7 @@ const bfi2012 = [
     title: 'Rear Window',
     director: 'Alfred Hitchcock',
     year: 1954,
+    bfiSet: 'bfi2012',
     bfiRank: 53,
     imdbID: 'tt0047396',
     poster:
@@ -489,6 +543,7 @@ const bfi2012 = [
     title: 'Raging Bull',
     director: 'Martin Scorsese',
     year: 1980,
+    bfiSet: 'bfi2012',
     bfiRank: 53,
     imdbID: 'tt0081398',
     poster:
@@ -498,6 +553,7 @@ const bfi2012 = [
     title: 'M',
     director: 'Fritz Lang',
     year: 1931,
+    bfiSet: 'bfi2012',
     bfiRank: 56,
     imdbID: 'tt0022100',
     poster:
@@ -507,6 +563,7 @@ const bfi2012 = [
     title: 'The Leopard',
     director: 'Luchino Visconti',
     year: 1963,
+    bfiSet: 'bfi2012',
     bfiRank: 57,
     imdbID: 'tt0057091',
     poster:
@@ -516,6 +573,7 @@ const bfi2012 = [
     title: 'Touch of Evil',
     director: 'Orson Welles',
     year: 1958,
+    bfiSet: 'bfi2012',
     bfiRank: 57,
     imdbID: 'tt0052311',
     poster:
@@ -525,6 +583,7 @@ const bfi2012 = [
     title: 'Sherlock, Jr.',
     director: 'Buster Keaton',
     year: 1924,
+    bfiSet: 'bfi2012',
     bfiRank: 59,
     imdbID: 'tt0015324',
     poster:
@@ -534,6 +593,7 @@ const bfi2012 = [
     title: 'Barry Lyndon',
     director: 'Stanley Kubrick',
     year: 1975,
+    bfiSet: 'bfi2012',
     bfiRank: 59,
     imdbID: 'tt0072684',
     poster:
@@ -543,6 +603,7 @@ const bfi2012 = [
     title: 'La Maman et la Putain',
     director: 'Jean Eustache',
     year: 1973,
+    bfiSet: 'bfi2012',
     bfiRank: 59,
     imdbID: 'tt0070359',
     poster:
@@ -552,6 +613,7 @@ const bfi2012 = [
     title: 'Sansho Dayu',
     director: 'Mizoguchi Kenji',
     year: 1954,
+    bfiSet: 'bfi2012',
     bfiRank: 59,
     imdbID: 'tt0047445',
     poster:
@@ -561,6 +623,7 @@ const bfi2012 = [
     title: 'Wild Strawberries',
     director: 'Ingmar Bergman',
     year: 1957,
+    bfiSet: 'bfi2012',
     bfiRank: 63,
     imdbID: 'tt0050986',
     poster:
@@ -570,6 +633,7 @@ const bfi2012 = [
     title: 'Modern Times',
     director: 'Charlie Chaplin',
     year: 1936,
+    bfiSet: 'bfi2012',
     bfiRank: 63,
     imdbID: 'tt0027977',
     poster:
@@ -579,6 +643,7 @@ const bfi2012 = [
     title: 'Sunset Blvd.',
     director: 'Billy Wilder',
     year: 1950,
+    bfiSet: 'bfi2012',
     bfiRank: 63,
     imdbID: 'tt0043014',
     poster:
@@ -588,6 +653,7 @@ const bfi2012 = [
     title: 'The Night of the Hunter',
     director: 'Charles Laughton',
     year: 1955,
+    bfiSet: 'bfi2012',
     bfiRank: 63,
     imdbID: 'tt0048424',
     poster:
@@ -597,6 +663,7 @@ const bfi2012 = [
     title: 'Pickpocket',
     director: 'Robert Bresson',
     year: 1959,
+    bfiSet: 'bfi2012',
     bfiRank: 63,
     imdbID: 'tt0053168',
     poster:
@@ -606,6 +673,7 @@ const bfi2012 = [
     title: 'Rio Bravo',
     director: 'Howard Hawks',
     year: 1958,
+    bfiSet: 'bfi2012',
     bfiRank: 63,
     imdbID: 'tt0053221',
     poster:
@@ -615,6 +683,7 @@ const bfi2012 = [
     title: 'Blade Runner',
     director: 'Ridley Scott',
     year: 1982,
+    bfiSet: 'bfi2012',
     bfiRank: 69,
     imdbID: 'tt0083658',
     poster:
@@ -624,6 +693,7 @@ const bfi2012 = [
     title: 'Blue Velvet',
     director: 'David Lynch',
     year: 1986,
+    bfiSet: 'bfi2012',
     bfiRank: 69,
     imdbID: 'tt0090756',
     poster:
@@ -633,6 +703,7 @@ const bfi2012 = [
     title: 'Sans Soleil',
     director: 'Chris Marker',
     year: 1982,
+    bfiSet: 'bfi2012',
     bfiRank: 69,
     imdbID: 'tt0084628',
     poster:
@@ -642,6 +713,7 @@ const bfi2012 = [
     title: 'A Man Escaped',
     director: 'Robert Bresson',
     year: 1956,
+    bfiSet: 'bfi2012',
     bfiRank: 69,
     imdbID: 'tt0049902',
     poster:
@@ -651,6 +723,7 @@ const bfi2012 = [
     title: 'The Third Man',
     director: 'Carol Reed',
     year: 1949,
+    bfiSet: 'bfi2012',
     bfiRank: 73,
     imdbID: 'tt0041959',
     poster:
@@ -660,6 +733,7 @@ const bfi2012 = [
     title: 'L’Eclisse',
     director: 'Michelangelo Antonioni',
     year: 1962,
+    bfiSet: 'bfi2012',
     bfiRank: 73,
     imdbID: 'tt0056736',
     poster:
@@ -669,6 +743,7 @@ const bfi2012 = [
     title: 'Children of Paradise',
     director: 'Marcel Carné',
     year: 1945,
+    bfiSet: 'bfi2012',
     bfiRank: 73,
     imdbID: 'tt0037674',
     poster:
@@ -678,6 +753,7 @@ const bfi2012 = [
     title: 'La Grande Illusion',
     director: 'Jean Renoir',
     year: 1937,
+    bfiSet: 'bfi2012',
     bfiRank: 73,
     imdbID: 'tt0028950',
     poster:
@@ -687,6 +763,7 @@ const bfi2012 = [
     title: 'Nashville',
     director: 'Robert Altman',
     year: 1975,
+    bfiSet: 'bfi2012',
     bfiRank: 73,
     imdbID: 'tt0073440',
     poster:
@@ -696,6 +773,7 @@ const bfi2012 = [
     title: 'Chinatown',
     director: 'Roman Polanski',
     year: 1974,
+    bfiSet: 'bfi2012',
     bfiRank: 78,
     imdbID: 'tt0071315',
     poster:
@@ -705,6 +783,7 @@ const bfi2012 = [
     title: 'Beau Travail',
     director: 'Claire Denis',
     year: 1998,
+    bfiSet: 'bfi2012',
     bfiRank: 78,
     imdbID: 'tt0209933',
     poster:
@@ -714,6 +793,7 @@ const bfi2012 = [
     title: 'Once Upon a Time in the West',
     director: 'Sergio Leone',
     year: 1968,
+    bfiSet: 'bfi2012',
     bfiRank: 78,
     imdbID: 'tt0064116',
     poster:
@@ -723,6 +803,7 @@ const bfi2012 = [
     title: 'The Magnificent Ambersons',
     director: 'Orson Welles',
     year: 1942,
+    bfiSet: 'bfi2012',
     bfiRank: 81,
     imdbID: 'tt0035015',
     poster:
@@ -732,6 +813,7 @@ const bfi2012 = [
     title: 'Lawrence of Arabia',
     director: 'David Lean',
     year: 1962,
+    bfiSet: 'bfi2012',
     bfiRank: 81,
     imdbID: 'tt0056172',
     poster:
@@ -741,6 +823,7 @@ const bfi2012 = [
     title: 'The Spirit of the Beehive',
     director: 'Victor Erice',
     year: 1973,
+    bfiSet: 'bfi2012',
     bfiRank: 81,
     imdbID: 'tt0070040',
     poster:
@@ -750,6 +833,7 @@ const bfi2012 = [
     title: 'Fanny and Alexander',
     director: 'Ingmar Bergman',
     year: 1984,
+    bfiSet: 'bfi2012',
     bfiRank: 84,
     imdbID: 'tt0083922',
     poster:
@@ -759,6 +843,7 @@ const bfi2012 = [
     title: 'Casablanca',
     director: 'Michael Curtiz',
     year: 1942,
+    bfiSet: 'bfi2012',
     bfiRank: 84,
     imdbID: 'tt0034583',
     poster:
@@ -768,6 +853,7 @@ const bfi2012 = [
     title: 'The Colour of Pomegranates',
     director: 'Sergei Parajanov',
     year: 1968,
+    bfiSet: 'bfi2012',
     bfiRank: 84,
     imdbID: 'tt0063555',
     poster:
@@ -777,6 +863,7 @@ const bfi2012 = [
     title: 'Greed',
     director: 'Erich von Stroheim',
     year: 1924,
+    bfiSet: 'bfi2012',
     bfiRank: 84,
     imdbID: 'tt0015881',
     poster:
@@ -786,6 +873,7 @@ const bfi2012 = [
     title: 'A Brighter Summer Day',
     director: 'Edward Yang',
     year: 1991,
+    bfiSet: 'bfi2012',
     bfiRank: 84,
     imdbID: 'tt0101985',
     poster:
@@ -795,6 +883,7 @@ const bfi2012 = [
     title: 'The Wild Bunch',
     director: 'Sam Peckinpah',
     year: 1969,
+    bfiSet: 'bfi2012',
     bfiRank: 84,
     imdbID: 'tt0065214',
     poster:
@@ -804,6 +893,7 @@ const bfi2012 = [
     title: 'Partie de Campagne',
     director: 'Jean Renoir',
     year: 1936,
+    bfiSet: 'bfi2012',
     bfiRank: 90,
     imdbID: 'tt0028445',
     poster:
@@ -813,6 +903,7 @@ const bfi2012 = [
     title: 'Aguirre, Wrath of God',
     director: 'Werner Herzog',
     year: 1972,
+    bfiSet: 'bfi2012',
     bfiRank: 90,
     imdbID: 'tt0068182',
     poster:
@@ -822,6 +913,7 @@ const bfi2012 = [
     title: 'A Matter of Life and Death',
     director: 'Michael Powell/Emeric Pressburger',
     year: 1946,
+    bfiSet: 'bfi2012',
     bfiRank: 90,
     imdbID: 'tt0038733',
     poster:
@@ -831,6 +923,7 @@ const bfi2012 = [
     title: 'The Seventh Seal',
     director: 'Ingmar Bergman',
     year: 1957,
+    bfiSet: 'bfi2012',
     bfiRank: 93,
     imdbID: 'tt0050976',
     poster:
@@ -840,6 +933,7 @@ const bfi2012 = [
     title: 'Un Chien Andalou',
     director: 'Luis Buñuel',
     year: 1929,
+    bfiSet: 'bfi2012',
     bfiRank: 93,
     imdbID: 'tt0020530',
     poster:
@@ -849,6 +943,7 @@ const bfi2012 = [
     title: 'Intolerance',
     director: 'D.W. Griffith',
     year: 1916,
+    bfiSet: 'bfi2012',
     bfiRank: 93,
     imdbID: 'tt0006864',
     poster:
@@ -858,6 +953,7 @@ const bfi2012 = [
     title: 'A Once and a Two',
     director: 'Edward Yang',
     year: 1999,
+    bfiSet: 'bfi2012',
     bfiRank: 93,
     imdbID: 'tt0244316',
     poster:
@@ -867,6 +963,7 @@ const bfi2012 = [
     title: 'The Life and Death of Colonel Blimp',
     director: 'Michael Powell/Emeric Pressburger',
     year: 1943,
+    bfiSet: 'bfi2012',
     bfiRank: 93,
     imdbID: 'tt0036112',
     poster:
@@ -876,6 +973,7 @@ const bfi2012 = [
     title: 'Touki Bouki',
     director: 'Djibril Diop Mambety',
     year: 1973,
+    bfiSet: 'bfi2012',
     bfiRank: 93,
     imdbID: 'tt0070820',
     poster:
@@ -885,6 +983,7 @@ const bfi2012 = [
     title: 'Fear Eats the Soul',
     director: 'Rainer Werner Fassbinder',
     year: 1974,
+    bfiSet: 'bfi2012',
     bfiRank: 93,
     imdbID: 'tt0071141',
     poster:
@@ -894,6 +993,7 @@ const bfi2012 = [
     title: 'Imitation of Life',
     director: 'Douglas Sirk',
     year: 1959,
+    bfiSet: 'bfi2012',
     bfiRank: 93,
     imdbID: 'tt0052918',
     poster:
@@ -903,6 +1003,7 @@ const bfi2012 = [
     title: 'Madame de…',
     director: 'Max Ophüls',
     year: 1953,
+    bfiSet: 'bfi2012',
     bfiRank: 93,
     imdbID: 'tt0046022',
     poster:
@@ -912,6 +1013,7 @@ const bfi2012 = [
     title: 'Wavelength',
     director: 'Michael Snow',
     year: 1967,
+    bfiSet: 'bfi2012',
     bfiRank: 102,
     imdbID: 'tt0127354',
     poster:
@@ -921,6 +1023,7 @@ const bfi2012 = [
     title: 'The Conformist',
     director: 'Bernardo Bertolucci',
     year: 1970,
+    bfiSet: 'bfi2012',
     bfiRank: 102,
     imdbID: 'tt0065571',
     poster:
@@ -930,6 +1033,7 @@ const bfi2012 = [
     title: 'The Travelling Players',
     director: 'Theodorus Angelopoulos',
     year: 1975,
+    bfiSet: 'bfi2012',
     bfiRank: 102,
     imdbID: 'tt0073800',
     poster:
@@ -939,6 +1043,7 @@ const bfi2012 = [
     title: 'Meshes of the Afternoon',
     director: 'Maya Deren/Alexander Hammid',
     year: 1943,
+    bfiSet: 'bfi2012',
     bfiRank: 102,
     imdbID: 'tt0036154',
     poster:
@@ -948,6 +1053,7 @@ const bfi2012 = [
     title: 'Two or Three Things I Know About Her',
     director: 'Jean-Luc Godard',
     year: 1967,
+    bfiSet: 'bfi2012',
     bfiRank: 102,
     imdbID: 'tt0060304',
     poster:
@@ -957,6 +1063,7 @@ const bfi2012 = [
     title: 'The Tree of Life',
     director: 'Terence Malick',
     year: 2010,
+    bfiSet: 'bfi2012',
     bfiRank: 102,
     imdbID: 'tt0478304',
     poster:
@@ -966,6 +1073,7 @@ const bfi2012 = [
     title: 'Ivan the Terrible, Part I',
     director: 'Sergei M. Eisenstein',
     year: 1945,
+    bfiSet: 'bfi2012',
     bfiRank: 102,
     imdbID: 'tt0037824',
     poster:
@@ -975,6 +1083,7 @@ const bfi2012 = [
     title: 'Last Year at Marienbad',
     director: 'Alain Resnais',
     year: 1961,
+    bfiSet: 'bfi2012',
     bfiRank: 102,
     imdbID: 'tt0054632',
     poster:
@@ -984,6 +1093,7 @@ const bfi2012 = [
     title: 'The Lady Eve',
     director: 'Preston Sturges',
     year: 1941,
+    bfiSet: 'bfi2012',
     bfiRank: 110,
     imdbID: 'tt0033804',
     poster:
@@ -993,6 +1103,7 @@ const bfi2012 = [
     title: 'Los Olvidados',
     director: 'Luis Buñuel',
     year: 1950,
+    bfiSet: 'bfi2012',
     bfiRank: 110,
     imdbID: 'tt0042804',
     poster:
@@ -1002,6 +1113,7 @@ const bfi2012 = [
     title: 'Bringing Up Baby',
     director: 'Howard Hawks',
     year: 1938,
+    bfiSet: 'bfi2012',
     bfiRank: 110,
     imdbID: 'tt0029947',
     poster:
@@ -1011,6 +1123,7 @@ const bfi2012 = [
     title: 'Performance',
     director: 'Donald Cammell/Nicolas Roeg',
     year: 1970,
+    bfiSet: 'bfi2012',
     bfiRank: 110,
     imdbID: 'tt0066214',
     poster:
@@ -1020,6 +1133,7 @@ const bfi2012 = [
     title: 'The Passenger',
     director: 'Michelangelo Antonioni',
     year: 1974,
+    bfiSet: 'bfi2012',
     bfiRank: 110,
     imdbID: 'tt0073580',
     poster:
@@ -1029,6 +1143,7 @@ const bfi2012 = [
     title: 'Viridiana',
     director: 'Luis Buñuel',
     year: 1961,
+    bfiSet: 'bfi2012',
     bfiRank: 110,
     imdbID: 'tt0055601',
     poster:
@@ -1038,6 +1153,7 @@ const bfi2012 = [
     title: 'L’Age d’Or',
     director: 'Luis Buñuel',
     year: 1930,
+    bfiSet: 'bfi2012',
     bfiRank: 110,
     imdbID: 'tt0021577',
     poster:
@@ -1047,6 +1163,7 @@ const bfi2012 = [
     title: 'A Canterbury Tale',
     director: 'Michael Powell/Emeric Pressburger',
     year: 1944,
+    bfiSet: 'bfi2012',
     bfiRank: 117,
     imdbID: 'tt0036695',
     poster:
@@ -1056,6 +1173,7 @@ const bfi2012 = [
     title: 'Mouchette',
     director: 'Robert Bresson',
     year: 1966,
+    bfiSet: 'bfi2012',
     bfiRank: 117,
     imdbID: 'tt0061996',
     poster:
@@ -1066,6 +1184,7 @@ const bfi2012 = [
       'Dr. Strangelove or How I Stopped Worrying and Learned to Love the Bomb',
     director: 'Stanley Kubrick',
     year: 1963,
+    bfiSet: 'bfi2012',
     bfiRank: 117,
     imdbID: 'tt0057012',
     poster:
@@ -1075,6 +1194,7 @@ const bfi2012 = [
     title: 'Nosferatu',
     director: 'F.W. Murnau',
     year: 1922,
+    bfiSet: 'bfi2012',
     bfiRank: 117,
     imdbID: 'tt0013442',
     poster:
@@ -1084,6 +1204,7 @@ const bfi2012 = [
     title: 'The Red Shoes',
     director: 'Michael Powell/Emeric Pressburger',
     year: 1948,
+    bfiSet: 'bfi2012',
     bfiRank: 117,
     imdbID: 'tt0040725',
     poster:
@@ -1093,6 +1214,7 @@ const bfi2012 = [
     title: 'Trouble in Paradise',
     director: 'Ernst Lubitsch',
     year: 1932,
+    bfiSet: 'bfi2012',
     bfiRank: 117,
     imdbID: 'tt0023622',
     poster:
@@ -1102,6 +1224,7 @@ const bfi2012 = [
     title: 'A City of Sadness',
     director: 'Hsiao-hsien Hou',
     year: 1989,
+    bfiSet: 'bfi2012',
     bfiRank: 117,
     imdbID: 'tt0096908',
     poster:
@@ -1111,6 +1234,7 @@ const bfi2012 = [
     title: 'Amarcord',
     director: 'Federico Fellini',
     year: 1972,
+    bfiSet: 'bfi2012',
     bfiRank: 117,
     imdbID: 'tt0071129',
     poster:
@@ -1120,6 +1244,7 @@ const bfi2012 = [
     title: 'The Man Who Shot Liberty Valance',
     director: 'John Ford',
     year: 1962,
+    bfiSet: 'bfi2012',
     bfiRank: 117,
     imdbID: 'tt0056217',
     poster:
@@ -1129,6 +1254,7 @@ const bfi2012 = [
     title: 'Days of Heaven',
     director: 'Terence Malick',
     year: 1978,
+    bfiSet: 'bfi2012',
     bfiRank: 117,
     imdbID: 'tt0077405',
     poster:
@@ -1138,6 +1264,7 @@ const bfi2012 = [
     title: 'Spring in a Small Town',
     director: 'Fei Mu',
     year: 1948,
+    bfiSet: 'bfi2012',
     bfiRank: 127,
     imdbID: 'tt0189219',
     poster:
@@ -1147,6 +1274,7 @@ const bfi2012 = [
     title: 'Do the Right Thing',
     director: 'Spike Lee',
     year: 1989,
+    bfiSet: 'bfi2012',
     bfiRank: 127,
     imdbID: 'tt0097216',
     poster:
@@ -1156,6 +1284,7 @@ const bfi2012 = [
     title: 'Out 1',
     director: 'Jacques Rivette',
     year: 1990,
+    bfiSet: 'bfi2012',
     bfiRank: 127,
     imdbID: 'tt0246135',
     poster:
@@ -1165,6 +1294,7 @@ const bfi2012 = [
     title: 'Tropical Malady',
     director: 'Apichatpong Weerasethakul',
     year: 2004,
+    bfiSet: 'bfi2012',
     bfiRank: 127,
     imdbID: 'tt0381668',
     poster:
@@ -1174,6 +1304,7 @@ const bfi2012 = [
     title: 'The River',
     director: 'Jean Renoir',
     year: 1951,
+    bfiSet: 'bfi2012',
     bfiRank: 127,
     imdbID: 'tt0043972',
     poster:
@@ -1183,6 +1314,7 @@ const bfi2012 = [
     title: 'Jules et Jim',
     director: 'Francois Truffaut',
     year: 1962,
+    bfiSet: 'bfi2012',
     bfiRank: 127,
     imdbID: 'tt0055032',
     poster:
@@ -1192,6 +1324,7 @@ const bfi2012 = [
     title: 'Pulp Fiction',
     director: 'Quentin Tarantino',
     year: 1994,
+    bfiSet: 'bfi2012',
     bfiRank: 127,
     imdbID: 'tt0110912',
     poster:
@@ -1201,6 +1334,7 @@ const bfi2012 = [
     title: 'Meet Me in St. Louis',
     director: 'Vincente Minnelli',
     year: 1944,
+    bfiSet: 'bfi2012',
     bfiRank: 127,
     imdbID: 'tt0037059',
     poster:
@@ -1210,6 +1344,7 @@ const bfi2012 = [
     title: 'L’Argent',
     director: 'Robert Bresson',
     year: 1983,
+    bfiSet: 'bfi2012',
     bfiRank: 127,
     imdbID: 'tt0085180',
     poster:
@@ -1219,6 +1354,7 @@ const bfi2012 = [
     title: 'Ikiru',
     director: 'Akira Kurosawa',
     year: 1952,
+    bfiSet: 'bfi2012',
     bfiRank: 127,
     imdbID: 'tt0044741',
     poster:
@@ -1228,6 +1364,7 @@ const bfi2012 = [
     title: 'Three Colors: Blue',
     director: 'Krysztof Kielowski',
     year: 1993,
+    bfiSet: 'bfi2012',
     bfiRank: 127,
     imdbID: 'tt0108394',
     poster:
@@ -1237,6 +1374,7 @@ const bfi2012 = [
     title: 'Don’t Look Now',
     director: 'Nicolas Roeg',
     year: 1973,
+    bfiSet: 'bfi2012',
     bfiRank: 127,
     imdbID: 'tt0069995',
     poster:
@@ -1246,6 +1384,7 @@ const bfi2012 = [
     title: 'Celine and Julie Go Boating',
     director: 'Jacques Rivette',
     year: 1974,
+    bfiSet: 'bfi2012',
     bfiRank: 127,
     imdbID: 'tt0071381',
     poster:
@@ -1255,6 +1394,7 @@ const bfi2012 = [
     title: 'Annie Hall',
     director: 'Woody Allen',
     year: 1977,
+    bfiSet: 'bfi2012',
     bfiRank: 127,
     imdbID: 'tt0075686',
     poster:
@@ -1264,6 +1404,7 @@ const bfi2012 = [
     title: 'The Apartment',
     director: 'Billy Wilder',
     year: 1960,
+    bfiSet: 'bfi2012',
     bfiRank: 127,
     imdbID: 'tt0053604',
     poster:
@@ -1273,6 +1414,7 @@ const bfi2012 = [
     title: 'The Last Laugh',
     director: 'F.W. Murnau',
     year: 1924,
+    bfiSet: 'bfi2012',
     bfiRank: 127,
     imdbID: 'tt0015064',
     poster:
@@ -1282,6 +1424,7 @@ const bfi2012 = [
     title: 'Hiroshima Mon Amour',
     director: 'Alain Resnais',
     year: 1959,
+    bfiSet: 'bfi2012',
     bfiRank: 127,
     imdbID: 'tt0052893',
     poster:
@@ -1291,6 +1434,7 @@ const bfi2012 = [
     title: 'Blow Up',
     director: 'Michelangelo Antonioni',
     year: 1966,
+    bfiSet: 'bfi2012',
     bfiRank: 144,
     imdbID: 'tt0060176',
     poster:
@@ -1300,6 +1444,7 @@ const bfi2012 = [
     title: 'The Great Dictator',
     director: 'Charlie Chaplin',
     year: 1940,
+    bfiSet: 'bfi2012',
     bfiRank: 144,
     imdbID: 'tt0032553',
     poster:
@@ -1309,6 +1454,7 @@ const bfi2012 = [
     title: 'Memories of Underdevelopment',
     director: 'Tomas Gutierrez Alea',
     year: 1968,
+    bfiSet: 'bfi2012',
     bfiRank: 144,
     imdbID: 'tt0063291',
     poster:
@@ -1318,6 +1464,7 @@ const bfi2012 = [
     title: 'Diary of a Country Priest',
     director: 'Robert Bresson',
     year: 1951,
+    bfiSet: 'bfi2012',
     bfiRank: 144,
     imdbID: 'tt0042619',
     poster:
@@ -1327,6 +1474,7 @@ const bfi2012 = [
     title: 'Chungking Express',
     director: 'Wong Kar Wai',
     year: 1994,
+    bfiSet: 'bfi2012',
     bfiRank: 144,
     imdbID: 'tt0109424',
     poster:
@@ -1336,6 +1484,7 @@ const bfi2012 = [
     title: 'To Be or Not To Be',
     director: 'Ernst Lubitsch',
     year: 1942,
+    bfiSet: 'bfi2012',
     bfiRank: 144,
     imdbID: 'tt0035446',
     poster:
@@ -1345,6 +1494,7 @@ const bfi2012 = [
     title: 'A Woman Under the Influence',
     director: 'John Cassavetes',
     year: 1974,
+    bfiSet: 'bfi2012',
     bfiRank: 144,
     imdbID: 'tt0072417',
     poster:
@@ -1354,6 +1504,7 @@ const bfi2012 = [
     title: 'Napoleon',
     director: 'Abel Gance',
     year: 1927,
+    bfiSet: 'bfi2012',
     bfiRank: 144,
     imdbID: 'tt0018192',
     poster:
@@ -1363,6 +1514,7 @@ const bfi2012 = [
     title: 'Vivre Sa Vie',
     director: 'Jean-Luc Godard',
     year: 1962,
+    bfiSet: 'bfi2012',
     bfiRank: 144,
     imdbID: 'tt0056663',
     poster:
@@ -1372,6 +1524,7 @@ const bfi2012 = [
     title: 'The Wizard of Oz',
     director: 'Victor Fleming',
     year: 1939,
+    bfiSet: 'bfi2012',
     bfiRank: 144,
     imdbID: 'tt0032138',
     poster:
@@ -1381,6 +1534,7 @@ const bfi2012 = [
     title: 'Marketa Lazarova',
     director: 'Frantisek Vlacil',
     year: 1967,
+    bfiSet: 'bfi2012',
     bfiRank: 154,
     imdbID: 'tt0063278',
     poster:
@@ -1390,6 +1544,7 @@ const bfi2012 = [
     title: 'Hidden',
     director: 'Michael Haneke',
     year: 2004,
+    bfiSet: 'bfi2012',
     bfiRank: 154,
     imdbID: 'tt0387898',
     poster:
@@ -1399,6 +1554,7 @@ const bfi2012 = [
     title: 'The Shining',
     director: 'Stanley Kubrick',
     year: 1980,
+    bfiSet: 'bfi2012',
     bfiRank: 154,
     imdbID: 'tt0081505',
     poster:
@@ -1408,6 +1564,7 @@ const bfi2012 = [
     title: 'Solaris',
     director: 'Andrei Tarkovsky',
     year: 1972,
+    bfiSet: 'bfi2012',
     bfiRank: 154,
     imdbID: 'tt0069293',
     poster:
@@ -1417,6 +1574,7 @@ const bfi2012 = [
     title: 'Chimes at Midnight',
     director: 'Orson Welles',
     year: 1966,
+    bfiSet: 'bfi2012',
     bfiRank: 154,
     imdbID: 'tt0059012',
     poster:
@@ -1426,6 +1584,7 @@ const bfi2012 = [
     title: 'The Gold Rush',
     director: 'Charlie Chaplin',
     year: 1925,
+    bfiSet: 'bfi2012',
     bfiRank: 154,
     imdbID: 'tt0015864',
     poster:
@@ -1435,6 +1594,7 @@ const bfi2012 = [
     title: 'Letter from an Unknown Woman',
     director: 'Max Ophüls',
     year: 1948,
+    bfiSet: 'bfi2012',
     bfiRank: 154,
     imdbID: 'tt0040536',
     poster:
@@ -1444,6 +1604,7 @@ const bfi2012 = [
     title: 'Brief Encounter',
     director: 'David Lean',
     year: 1945,
+    bfiSet: 'bfi2012',
     bfiRank: 154,
     imdbID: 'tt0037558',
     poster:
@@ -1453,6 +1614,7 @@ const bfi2012 = [
     title: 'In a Lonely Place',
     director: 'Nicholas Ray',
     year: 1950,
+    bfiSet: 'bfi2012',
     bfiRank: 154,
     imdbID: 'tt0042593',
     poster:
@@ -1462,6 +1624,7 @@ const bfi2012 = [
     title: 'Black Narcissus',
     director: 'Michael Powell/Emeric Pressburger',
     year: 1947,
+    bfiSet: 'bfi2012',
     bfiRank: 154,
     imdbID: 'tt0039192',
     poster:
@@ -1471,6 +1634,7 @@ const bfi2012 = [
     title: 'My Neighbor Totoro',
     director: 'Miyazaki Hayao',
     year: 1988,
+    bfiSet: 'bfi2012',
     bfiRank: 154,
     imdbID: 'tt0096283',
     poster:
@@ -1480,6 +1644,7 @@ const bfi2012 = [
     title: 'Only Angels Have Wings',
     director: 'Howard Hawks',
     year: 1939,
+    bfiSet: 'bfi2012',
     bfiRank: 154,
     imdbID: 'tt0031762',
     poster:
@@ -1489,6 +1654,7 @@ const bfi2012 = [
     title: 'Vampyr',
     director: 'Carl Theodor Dreyer',
     year: 1932,
+    bfiSet: 'bfi2012',
     bfiRank: 154,
     imdbID: 'tt0023649',
     poster:
@@ -1498,6 +1664,7 @@ const bfi2012 = [
     title: 'Come and See',
     director: 'Elem Klimov',
     year: 1985,
+    bfiSet: 'bfi2012',
     bfiRank: 154,
     imdbID: 'tt0091251',
     poster:
@@ -1507,6 +1674,7 @@ const bfi2012 = [
     title: 'Distant Voices, Still Lives',
     director: 'Terence Davies',
     year: 1988,
+    bfiSet: 'bfi2012',
     bfiRank: 154,
     imdbID: 'tt0095037',
     poster:
@@ -1516,6 +1684,7 @@ const bfi2012 = [
     title: 'Once Upon a Time in America',
     director: 'Sergio Leone',
     year: 1983,
+    bfiSet: 'bfi2012',
     bfiRank: 154,
     imdbID: 'tt0087843',
     poster:
@@ -1525,6 +1694,7 @@ const bfi2012 = [
     title: 'Cries and Whispers',
     director: 'Ingmar Bergman',
     year: 1972,
+    bfiSet: 'bfi2012',
     bfiRank: 154,
     imdbID: 'tt0069467',
     poster:
@@ -1534,6 +1704,7 @@ const bfi2012 = [
     title: 'King Kong',
     director: 'Merian C. Cooper/Ernest B. Schoedsack',
     year: 1933,
+    bfiSet: 'bfi2012',
     bfiRank: 171,
     imdbID: 'tt0024216',
     poster:
@@ -1543,6 +1714,7 @@ const bfi2012 = [
     title: 'The Werckmeister Harmonies',
     director: 'Bela Tarr',
     year: 2000,
+    bfiSet: 'bfi2012',
     bfiRank: 171,
     imdbID: 'tt0249241',
     poster:
@@ -1552,6 +1724,7 @@ const bfi2012 = [
     title: 'Star Wars',
     director: 'George Lucas',
     year: 1977,
+    bfiSet: 'bfi2012',
     bfiRank: 171,
     imdbID: 'tt0076759',
     poster:
@@ -1561,6 +1734,7 @@ const bfi2012 = [
     title: 'Notorious',
     director: 'Alfred Hitchcock',
     year: 1946,
+    bfiSet: 'bfi2012',
     bfiRank: 171,
     imdbID: 'tt0038787',
     poster:
@@ -1570,6 +1744,7 @@ const bfi2012 = [
     title: 'His Girl Friday',
     director: 'Howard Hawks',
     year: 1940,
+    bfiSet: 'bfi2012',
     bfiRank: 171,
     imdbID: 'tt0032599',
     poster:
@@ -1579,6 +1754,7 @@ const bfi2012 = [
     title: 'Goodfellas',
     director: 'Martin Scorsese',
     year: 1990,
+    bfiSet: 'bfi2012',
     bfiRank: 171,
     imdbID: 'tt0099685',
     poster:
@@ -1588,6 +1764,7 @@ const bfi2012 = [
     title: 'The Umbrellas of Cherbourg',
     director: 'Jacques Demy',
     year: 1964,
+    bfiSet: 'bfi2012',
     bfiRank: 171,
     imdbID: 'tt0058450',
     poster:
@@ -1597,6 +1774,7 @@ const bfi2012 = [
     title: 'A Trip to the Moon',
     director: 'George Méliès',
     year: 1902,
+    bfiSet: 'bfi2012',
     bfiRank: 171,
     imdbID: 'tt0000417',
     poster:
@@ -1606,6 +1784,7 @@ const bfi2012 = [
     title: 'Sweet Smell of Success',
     director: 'Alexander MacKendrick',
     year: 1957,
+    bfiSet: 'bfi2012',
     bfiRank: 171,
     imdbID: 'tt0051036',
     poster:
@@ -1615,6 +1794,7 @@ const bfi2012 = [
     title: 'Kind Hearts and Coronets',
     director: 'Robert Hamer',
     year: 1949,
+    bfiSet: 'bfi2012',
     bfiRank: 171,
     imdbID: 'tt0041546',
     poster:
@@ -1624,6 +1804,7 @@ const bfi2012 = [
     title: 'Tabu',
     director: 'F.W. Murnau',
     year: 1931,
+    bfiSet: 'bfi2012',
     bfiRank: 171,
     imdbID: 'tt0022458',
     poster:
@@ -1633,6 +1814,7 @@ const bfi2012 = [
     title: 'Earth',
     director: 'Aleksander Dovzhenko',
     year: 1930,
+    bfiSet: 'bfi2012',
     bfiRank: 171,
     imdbID: 'tt0021571',
     poster:
@@ -1642,6 +1824,7 @@ const bfi2012 = [
     title: 'Breaking the Waves',
     director: 'Lars von Trier',
     year: 1996,
+    bfiSet: 'bfi2012',
     bfiRank: 183,
     imdbID: 'tt0115751',
     poster:
@@ -1651,6 +1834,7 @@ const bfi2012 = [
     title: 'The Grapes of Wrath',
     director: 'John Ford',
     year: 1940,
+    bfiSet: 'bfi2012',
     bfiRank: 183,
     imdbID: 'tt0032551',
     poster:
@@ -1660,6 +1844,7 @@ const bfi2012 = [
     title: 'Paris, Texas',
     director: 'Wim Wenders',
     year: 1984,
+    bfiSet: 'bfi2012',
     bfiRank: 183,
     imdbID: 'tt0087884',
     poster:
@@ -1669,6 +1854,7 @@ const bfi2012 = [
     title: 'E.T.',
     director: 'Steven Spielberg',
     year: 1982,
+    bfiSet: 'bfi2012',
     bfiRank: 183,
     imdbID: 'tt0083866',
     poster:
@@ -1678,6 +1864,7 @@ const bfi2012 = [
     title: 'Rome, Open City',
     director: 'Roberto Rossellini',
     year: 1945,
+    bfiSet: 'bfi2012',
     bfiRank: 183,
     imdbID: 'tt0038890',
     poster:
@@ -1687,6 +1874,7 @@ const bfi2012 = [
     title: 'Faces',
     director: 'John Cassavetes',
     year: 1968,
+    bfiSet: 'bfi2012',
     bfiRank: 183,
     imdbID: 'tt0062952',
     poster:
@@ -1696,6 +1884,7 @@ const bfi2012 = [
     title: 'The Music Room',
     director: 'Satyajit Ray',
     year: 1958,
+    bfiSet: 'bfi2012',
     bfiRank: 183,
     imdbID: 'tt0051792',
     poster:
@@ -1705,6 +1894,7 @@ const bfi2012 = [
     title: 'The Story of the Last Chrysanthemums',
     director: 'Mizoguchi Kenji',
     year: 1939,
+    bfiSet: 'bfi2012',
     bfiRank: 183,
     imdbID: 'tt0032156',
     poster:
@@ -1714,6 +1904,7 @@ const bfi2012 = [
     title: 'A Touch of Zen',
     director: 'King Hu',
     year: 1969,
+    bfiSet: 'bfi2012',
     bfiRank: 183,
     imdbID: 'tt0064451',
     poster:
@@ -1723,6 +1914,7 @@ const bfi2012 = [
     title: 'Listen to Britain',
     director: 'Humphrey Jennings/Stewart McAllister',
     year: 1942,
+    bfiSet: 'bfi2012',
     bfiRank: 183,
     imdbID: 'tt0034978',
     poster:
@@ -1732,6 +1924,7 @@ const bfi2012 = [
     title: 'Day of Wrath',
     director: 'Carl Theodor Dreyer',
     year: 1943,
+    bfiSet: 'bfi2012',
     bfiRank: 183,
     imdbID: 'tt0036506',
     poster:
@@ -1741,6 +1934,7 @@ const bfi2012 = [
     title: 'The Thin Red Line',
     director: 'Terence Malick',
     year: 1998,
+    bfiSet: 'bfi2012',
     bfiRank: 183,
     imdbID: 'tt0120863',
     poster:
@@ -1750,6 +1944,7 @@ const bfi2012 = [
     title: 'Eraserhead',
     director: 'David Lynch',
     year: 1976,
+    bfiSet: 'bfi2012',
     bfiRank: 183,
     imdbID: 'tt0074486',
     poster:
@@ -1759,6 +1954,7 @@ const bfi2012 = [
     title: 'The Texas Chainsaw Massacre',
     director: 'Tobe Hooper',
     year: 1974,
+    bfiSet: 'bfi2012',
     bfiRank: 183,
     imdbID: 'tt0072271',
     poster:
@@ -1768,6 +1964,7 @@ const bfi2012 = [
     title: 'The Discreet Charm of the Bourgeoisie',
     director: 'Luis Buñuel',
     year: 1972,
+    bfiSet: 'bfi2012',
     bfiRank: 183,
     imdbID: 'tt0068361',
     poster:
@@ -1777,6 +1974,7 @@ const bfi2012 = [
     title: 'The Conversation',
     director: 'Francis Ford Coppola',
     year: 1974,
+    bfiSet: 'bfi2012',
     bfiRank: 183,
     imdbID: 'tt0071360',
     poster:
@@ -1786,6 +1984,7 @@ const bfi2012 = [
     title: 'Out of the Past',
     director: 'Jacques Tourneur',
     year: 1947,
+    bfiSet: 'bfi2012',
     bfiRank: 183,
     imdbID: 'tt0039689',
     poster:
@@ -1795,6 +1994,7 @@ const bfi2012 = [
     title: 'I Was Born, But…',
     director: 'Ozu Yasujiro',
     year: 1932,
+    bfiSet: 'bfi2012',
     bfiRank: 183,
     imdbID: 'tt0023634',
     poster:
@@ -1804,6 +2004,7 @@ const bfi2012 = [
     title: 'I Know Where I’m Going!',
     director: 'Michael Powell/Emeric Pressburger',
     year: 1945,
+    bfiSet: 'bfi2012',
     bfiRank: 183,
     imdbID: 'tt0037800',
     poster:
@@ -1813,6 +2014,7 @@ const bfi2012 = [
     title: 'The Death of Mr Lazarescu',
     director: 'Cristi Puiu',
     year: 2005,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0456149',
     poster:
@@ -1822,6 +2024,7 @@ const bfi2012 = [
     title: 'Red Desert',
     director: 'Michelangelo Antonioni',
     year: 1964,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0058003',
     poster:
@@ -1831,6 +2034,7 @@ const bfi2012 = [
     title: 'Chelsea Girls',
     director: 'Andy Warhol/Paul Morrissey',
     year: 1966,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0061465',
     poster:
@@ -1840,6 +2044,7 @@ const bfi2012 = [
     title: 'Badlands',
     director: 'Terence Malick',
     year: 1973,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0069762',
     poster:
@@ -1849,6 +2054,7 @@ const bfi2012 = [
     title: 'Kings of the Road',
     director: 'Wim Wenders',
     year: 1976,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0073152',
     poster:
@@ -1858,6 +2064,7 @@ const bfi2012 = [
     title: 'There Will Be Blood',
     director: 'Paul Thomas Anderson',
     year: 2002,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0469494',
     poster:
@@ -1867,6 +2074,7 @@ const bfi2012 = [
     title: 'WALL-E',
     director: 'Andrew Stanton',
     year: 2008,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0910970',
     poster:
@@ -1876,6 +2084,7 @@ const bfi2012 = [
     title: 'Berlin Alexanderplatz',
     director: 'Rainer Werner Fassbinder',
     year: 1980,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0080196',
     poster:
@@ -1885,6 +2094,7 @@ const bfi2012 = [
     title: 'Videodrome',
     director: 'David Cronenberg',
     year: 1983,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0086541',
     poster:
@@ -1894,6 +2104,7 @@ const bfi2012 = [
     title: 'Daisies',
     director: 'Vera Chytilova',
     year: 1966,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0060959',
     poster:
@@ -1903,6 +2114,7 @@ const bfi2012 = [
     title: 'Uncle Boonmee Who Can Recall His Past Lives',
     director: 'Apichatpong Weerasethakul',
     year: 2010,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt1588895',
     poster:
@@ -1912,6 +2124,7 @@ const bfi2012 = [
     title: 'Manhattan',
     director: 'Woody Allen',
     year: 1979,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0079522',
     poster:
@@ -1921,6 +2134,7 @@ const bfi2012 = [
     title: 'Cleo From 5 to 7',
     director: 'Agnes Varda',
     year: 1962,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0055852',
     poster:
@@ -1930,6 +2144,7 @@ const bfi2012 = [
     title: 'West of the Tracks',
     director: 'Wang Bing',
     year: 2002,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0389448',
     poster:
@@ -1939,6 +2154,7 @@ const bfi2012 = [
     title: 'Russian Ark',
     director: 'Aleksandr Sokurov',
     year: 2002,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0318034',
     poster:
@@ -1948,6 +2164,7 @@ const bfi2012 = [
     title: 'A Tale of Tales',
     director: 'Yuri Norstein',
     year: 1979,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0079986',
     poster:
@@ -1957,6 +2174,7 @@ const bfi2012 = [
     title: 'Spirited Away',
     director: 'Miyazaki Hayao',
     year: 2001,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0245429',
     poster:
@@ -1966,6 +2184,7 @@ const bfi2012 = [
     title: 'La Strada',
     director: 'Federico Fellini',
     year: 1954,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0047528',
     poster:
@@ -1975,6 +2194,7 @@ const bfi2012 = [
     title: 'Paisà',
     director: 'Roberto Rossellini',
     year: 1946,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0038823',
     poster:
@@ -1984,6 +2204,7 @@ const bfi2012 = [
     title: 'The Shop Around the Corner',
     director: 'Ernst Lubitsch',
     year: 1940,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0033045',
     poster:
@@ -1993,6 +2214,7 @@ const bfi2012 = [
     title: 'The Big Sleep',
     director: 'Howard Hawks',
     year: 1946,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0038355',
     poster:
@@ -2002,6 +2224,7 @@ const bfi2012 = [
     title: 'Killer of Sheep',
     director: 'Killer of Sheep',
     year: 1977,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0076263',
     poster:
@@ -2011,6 +2234,7 @@ const bfi2012 = [
     title: 'Wanda',
     director: 'Barbara Loden',
     year: 1970,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0067961',
     poster:
@@ -2020,6 +2244,7 @@ const bfi2012 = [
     title: 'Germany, Year Zero',
     director: 'Roberto Rossellini',
     year: 1948,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0039417',
     poster:
@@ -2029,6 +2254,7 @@ const bfi2012 = [
     title: 'The Life of Oharu',
     director: 'Mizoguchi Kenji',
     year: 1952,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0045112',
     poster:
@@ -2038,6 +2264,7 @@ const bfi2012 = [
     title: 'Army of Shadows',
     director: 'Jean-Pierre Melville',
     year: 1969,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0064040',
     poster:
@@ -2047,6 +2274,7 @@ const bfi2012 = [
     title: 'Salo, or the 120 Days of Sodom',
     director: 'Pier Paolo Pasolini',
     year: 1975,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0073650',
     poster:
@@ -2056,6 +2284,7 @@ const bfi2012 = [
     title: 'Duck Soup',
     director: 'Leo McCarey',
     year: 1933,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0023969',
     poster:
@@ -2065,6 +2294,7 @@ const bfi2012 = [
     title: 'The Devil Probably',
     director: 'Robert Bresson',
     year: 1977,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0075938',
     poster:
@@ -2074,6 +2304,7 @@ const bfi2012 = [
     title: 'The Turin Horse',
     director: 'Bela Tarr',
     year: 2011,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt1316540',
     poster:
@@ -2083,6 +2314,7 @@ const bfi2012 = [
     title: 'Love Streams',
     director: 'John Cassavetes',
     year: 1984,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0087644',
     poster:
@@ -2092,6 +2324,7 @@ const bfi2012 = [
     title: 'The Exterminating Angel',
     director: 'Luis Buñuel',
     year: 1962,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0056732',
     poster:
@@ -2101,6 +2334,7 @@ const bfi2012 = [
     title: 'Floating Clouds',
     director: 'Naruse Mikio',
     year: 1955,
+    bfiSet: 'bfi2012',
     bfiRank: 202,
     imdbID: 'tt0048757',
     poster:
@@ -2110,6 +2344,7 @@ const bfi2012 = [
     title: 'The Piano',
     director: 'Jane Campion',
     year: 1992,
+    bfiSet: 'bfi2012',
     bfiRank: 235,
     imdbID: 'tt0107822',
     poster:
@@ -2119,6 +2354,7 @@ const bfi2012 = [
     title: 'Gone With the Wind',
     director: 'Victor Fleming',
     year: 1939,
+    bfiSet: 'bfi2012',
     bfiRank: 235,
     imdbID: 'tt0031381',
     poster:
@@ -2128,6 +2364,7 @@ const bfi2012 = [
     title: 'Melancholia',
     director: 'Lars von Trier',
     year: 2011,
+    bfiSet: 'bfi2012',
     bfiRank: 235,
     imdbID: 'tt1527186',
     poster:
@@ -2137,6 +2374,7 @@ const bfi2012 = [
     title: 'The House Is Black',
     director: 'Forough Farrokhzad',
     year: 1962,
+    bfiSet: 'bfi2012',
     bfiRank: 235,
     imdbID: 'tt0336693',
     poster:
@@ -2146,6 +2384,7 @@ const bfi2012 = [
     title: 'The Cabinet of Dr. Caligari',
     director: 'Robert Wiene',
     year: 1920,
+    bfiSet: 'bfi2012',
     bfiRank: 235,
     imdbID: 'tt0010323',
     poster:
@@ -2155,6 +2394,7 @@ const bfi2012 = [
     title: 'Red River',
     director: 'Howard Hawks/Arthur Rosson',
     year: 1948,
+    bfiSet: 'bfi2012',
     bfiRank: 235,
     imdbID: 'tt0040724',
     poster:
@@ -2164,6 +2404,7 @@ const bfi2012 = [
     title: 'A Clockwork Orange',
     director: 'Stanley Kubrick',
     year: 1971,
+    bfiSet: 'bfi2012',
     bfiRank: 235,
     imdbID: 'tt0066921',
     poster:
@@ -2173,6 +2414,7 @@ const bfi2012 = [
     title: 'Two-Lane Blacktop',
     director: 'Monte Hellman',
     year: 1971,
+    bfiSet: 'bfi2012',
     bfiRank: 235,
     imdbID: 'tt0067893',
     poster:
@@ -2182,6 +2424,7 @@ const bfi2012 = [
     title: 'An Autumn Afternoon',
     director: 'Ozu Yasujiro',
     year: 1962,
+    bfiSet: 'bfi2012',
     bfiRank: 235,
     imdbID: 'tt0056444',
     poster:
@@ -2191,6 +2434,7 @@ const bfi2012 = [
     title: 'The Thin Blue Line',
     director: 'Errol Morris',
     year: 1989,
+    bfiSet: 'bfi2012',
     bfiRank: 235,
     imdbID: 'tt0096257',
     poster:
@@ -2200,6 +2444,7 @@ const bfi2012 = [
     title: 'The World of Apu',
     director: 'Satyajit Ray',
     year: 1958,
+    bfiSet: 'bfi2012',
     bfiRank: 235,
     imdbID: 'tt0052572',
     poster:
@@ -2209,6 +2454,7 @@ const bfi2012 = [
     title: 'The Testament of Dr. Mabuse',
     director: 'Fritz Lang',
     year: 1933,
+    bfiSet: 'bfi2012',
     bfiRank: 235,
     imdbID: 'tt0023563',
     poster:
@@ -2218,6 +2464,7 @@ const bfi2012 = [
     title: 'My Darling Clementine',
     director: 'John Ford',
     year: 1946,
+    bfiSet: 'bfi2012',
     bfiRank: 235,
     imdbID: 'tt0038762',
     poster:
@@ -2227,6 +2474,7 @@ const bfi2012 = [
     title: 'The Double Life of Veronique',
     director: 'Krysztof Kielowski',
     year: 1991,
+    bfiSet: 'bfi2012',
     bfiRank: 235,
     imdbID: 'tt0101765',
     poster:
@@ -2236,6 +2484,7 @@ const bfi2012 = [
     title: 'Kes',
     director: 'Ken Loach',
     year: 1966,
+    bfiSet: 'bfi2012',
     bfiRank: 235,
     imdbID: 'tt0064541',
     poster:
@@ -2245,6 +2494,7 @@ const bfi2012 = [
     title: 'Three Colors: Red',
     director: 'Krysztof Kielowski',
     year: 1994,
+    bfiSet: 'bfi2012',
     bfiRank: 235,
     imdbID: 'tt0111495',
     poster:

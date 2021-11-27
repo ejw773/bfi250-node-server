@@ -3,6 +3,7 @@ const bfi1992 = [
     title: 'Citizen Kane',
     director: 'Orson Welles',
     year: 1941,
+    bfiSet: 'bfi1992',
     bfiRank: 1,
     imdbID: 'tt0033467',
     poster:
@@ -12,6 +13,7 @@ const bfi1992 = [
     title: 'The Rules of the Game',
     director: 'Jean Renoir',
     year: 1939,
+    bfiSet: 'bfi1992',
     bfiRank: 2,
     imdbID: 'tt0031885',
     poster:
@@ -21,6 +23,7 @@ const bfi1992 = [
     title: 'Tokyo Story',
     director: 'Ozu Yasujiro',
     year: 1953,
+    bfiSet: 'bfi1992',
     bfiRank: 3,
     imdbID: 'tt0046438',
     poster:
@@ -30,6 +33,7 @@ const bfi1992 = [
     title: 'Vertigo',
     director: 'Alfred Hitchcock',
     year: 1958,
+    bfiSet: 'bfi1992',
     bfiRank: 4,
     imdbID: 'tt0052357',
     poster:
@@ -39,6 +43,7 @@ const bfi1992 = [
     title: 'The Searchers',
     director: 'John Ford',
     year: 1956,
+    bfiSet: 'bfi1992',
     bfiRank: 5,
     imdbID: 'tt0049730',
     poster:
@@ -48,6 +53,7 @@ const bfi1992 = [
     title: 'L’Atalante',
     director: 'Jean Vigo',
     year: 1934,
+    bfiSet: 'bfi1992',
     bfiRank: 6,
     imdbID: 'tt0024844',
     poster:
@@ -57,6 +63,7 @@ const bfi1992 = [
     title: 'The Passion of Joan of Arc',
     director: 'Carl Theodor Dreyer',
     year: 1928,
+    bfiSet: 'bfi1992',
     bfiRank: 7,
     imdbID: 'tt0019254',
     poster:
@@ -66,6 +73,7 @@ const bfi1992 = [
     title: 'Pather Panchali',
     director: 'Satyajit Ray',
     year: 1955,
+    bfiSet: 'bfi1992',
     bfiRank: 8,
     imdbID: 'tt0048473',
     poster:
@@ -75,6 +83,7 @@ const bfi1992 = [
     title: 'Battleship Potemkin',
     director: 'Sergei M. Eisenstein',
     year: 1925,
+    bfiSet: 'bfi1992',
     bfiRank: 9,
     imdbID: 'tt0015648',
     poster:
@@ -84,6 +93,7 @@ const bfi1992 = [
     title: '2001: A Space Odyssey',
     director: 'Stanley Kubrick',
     year: 1968,
+    bfiSet: 'bfi1992',
     bfiRank: 10,
     imdbID: 'tt0062622',
     poster:

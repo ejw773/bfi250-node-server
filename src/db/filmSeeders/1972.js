@@ -3,6 +3,7 @@ const bfi1972 = [
     title: 'Citizen Kane',
     director: 'Orson Welles',
     year: 1941,
+    bfiSet: 'bfi1972',
     bfiRank: 1,
     imdbID: 'tt0033467',
     poster:
@@ -12,6 +13,7 @@ const bfi1972 = [
     title: 'The Rules of the Game',
     director: 'Jean Renoir',
     year: 1939,
+    bfiSet: 'bfi1972',
     bfiRank: 2,
     imdbID: 'tt0031885',
     poster:
@@ -21,6 +23,7 @@ const bfi1972 = [
     title: 'Battleship Potemkin',
     director: 'Sergei M. Eisenstein',
     year: 1925,
+    bfiSet: 'bfi1972',
     bfiRank: 3,
     imdbID: 'tt0015648',
     poster:
@@ -30,6 +33,7 @@ const bfi1972 = [
     title: '8½',
     director: 'Federico Fellini',
     year: 1963,
+    bfiSet: 'bfi1972',
     bfiRank: 4,
     imdbID: 'tt0056801',
     poster:
@@ -39,6 +43,7 @@ const bfi1972 = [
     title: 'L’Avventura',
     director: 'Michelangelo Antonioni',
     year: 1960,
+    bfiSet: 'bfi1972',
     bfiRank: 5,
     imdbID: 'tt0053619',
     poster:
@@ -48,6 +53,7 @@ const bfi1972 = [
     title: 'Persona',
     director: 'Ingmar Bergman',
     year: 1966,
+    bfiSet: 'bfi1972',
     bfiRank: 6,
     imdbID: 'tt0060827',
     poster:
@@ -57,6 +63,7 @@ const bfi1972 = [
     title: 'The Passion of Joan of Arc',
     director: 'Carl Theodor Dreyer',
     year: 1928,
+    bfiSet: 'bfi1972',
     bfiRank: 7,
     imdbID: 'tt0019254',
     poster:
@@ -66,6 +73,7 @@ const bfi1972 = [
     title: 'The General',
     director: 'Buster Keaton',
     year: 1926,
+    bfiSet: 'bfi1972',
     bfiRank: 8,
     imdbID: 'tt0017925',
     poster:
@@ -75,6 +83,7 @@ const bfi1972 = [
     title: 'The Magnificent Ambersons',
     director: 'Orson Welles',
     year: 1942,
+    bfiSet: 'bfi1972',
     bfiRank: 9,
     imdbID: 'tt0035015',
     poster:
@@ -84,6 +93,7 @@ const bfi1972 = [
     title: 'Ugetsu Monogatari',
     director: 'Mizoguchi Kenji',
     year: 1953,
+    bfiSet: 'bfi1972',
     bfiRank: 10,
     imdbID: 'tt0046478',
     poster:
@@ -93,6 +103,7 @@ const bfi1972 = [
     title: 'Wild Strawberries',
     director: 'Ingmar Bergman',
     year: 1957,
+    bfiSet: 'bfi1972',
     bfiRank: 11,
     imdbID: 'tt0050986',
     poster:

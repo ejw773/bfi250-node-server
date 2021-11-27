@@ -3,6 +3,7 @@ const bfi2002 = [
     title: 'Citizen Kane',
     director: 'Orson Welles',
     year: 1941,
+    bfiSet: 'bfi2002',
     bfiRank: 1,
     imdbID: 'tt0033467',
     poster:
@@ -12,6 +13,7 @@ const bfi2002 = [
     title: 'Vertigo',
     director: 'Alfred Hitchcock',
     year: 1958,
+    bfiSet: 'bfi2002',
     bfiRank: 2,
     imdbID: 'tt0052357',
     poster:
@@ -21,6 +23,7 @@ const bfi2002 = [
     title: 'The Rules of the Game',
     director: 'Jean Renoir',
     year: 1939,
+    bfiSet: 'bfi2002',
     bfiRank: 3,
     imdbID: 'tt0031885',
     poster:
@@ -30,6 +33,7 @@ const bfi2002 = [
     title: 'The Godfather',
     director: 'Francis Ford Coppola',
     year: 1972,
+    bfiSet: 'bfi2002',
     bfiRank: 4,
     imdbID: 'tt0068646',
     poster:
@@ -39,6 +43,7 @@ const bfi2002 = [
     title: 'The Godfather, Part II',
     director: 'Francis Ford Coppola',
     year: 1974,
+    bfiSet: 'bfi2002',
     bfiRank: 4,
     imdbID: 'tt0071562',
     poster:
@@ -48,6 +53,7 @@ const bfi2002 = [
     title: 'Tokyo Story',
     director: 'Ozu Yasujiro',
     year: 1953,
+    bfiSet: 'bfi2002',
     bfiRank: 5,
     imdbID: 'tt0046438',
     poster:
@@ -57,6 +63,7 @@ const bfi2002 = [
     title: '2001: A Space Odyssey',
     director: 'Stanley Kubrick',
     year: 1968,
+    bfiSet: 'bfi2002',
     bfiRank: 6,
     imdbID: 'tt0062622',
     poster:
@@ -66,6 +73,7 @@ const bfi2002 = [
     title: 'Battleship Potemkin',
     director: 'Sergei M. Eisenstein',
     year: 1925,
+    bfiSet: 'bfi2002',
     bfiRank: 7,
     imdbID: 'tt0015648',
     poster:
@@ -75,6 +83,7 @@ const bfi2002 = [
     title: 'Sunrise',
     director: 'F. W. Murnau',
     year: 1927,
+    bfiSet: 'bfi2002',
     bfiRank: 8,
     imdbID: 'tt0018455',
     poster:
@@ -84,6 +93,7 @@ const bfi2002 = [
     title: '8½',
     director: 'Federico Fellini',
     year: 1963,
+    bfiSet: 'bfi2002',
     bfiRank: 9,
     imdbID: 'tt0056801',
     poster:
@@ -93,6 +103,7 @@ const bfi2002 = [
     title: 'Singin’ in the Rain',
     director: 'Gene Kelly/Stanley Donen',
     year: 1951,
+    bfiSet: 'bfi2002',
     bfiRank: 10,
     imdbID: 'tt0045152',
     poster:
