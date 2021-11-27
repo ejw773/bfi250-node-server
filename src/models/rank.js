@@ -1,18 +1,24 @@
 const mongoose = require('mongoose')
 
 const rankSchema = new mongoose.Schema({
-    imdbID: {
-        type: String,
-        required: true
-    },
     bfiSet: {
         type: String,
         required: true
     },
-    bfiRank: {
-        type: Number,
-        required: true
-    }
+    filmRanks: [{
+        // film: {
+        //     type: mongoose.Schema.Types.ObjectId,
+        //     ref: 'Film'
+        // },
+        bfiRank: {
+            type: Number,
+            required: true
+        },
+        imdbID: {
+            type: String,
+            required: true
+        }
+    }]
 })
 
 const Rank = mongoose.model('Rank', rankSchema)
