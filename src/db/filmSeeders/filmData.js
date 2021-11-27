@@ -1999,7 +1999,40 @@ const filmData = [
     imdbID: 'tt0111495',
     poster:
       'https://m.media-amazon.com/images/M/MV5BYTg1MmNiMjItMmY4Yy00ZDQ3LThjMzYtZGQ0ZTQzNTdkMGQ1L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg',
-  }
+  },
+  {
+    title: 'Louisian Story',
+    director: 'Robert J. Flaherty',
+    year: 1948,
+    imdbID: 'tt0040550',
+    poster:
+      'https://m.media-amazon.com/images/M/MV5BYTc0MDRhZTEtMWY4Ni00ZTg5LTg5Y2YtODE2NWVmY2IwNWRmXkEyXkFqcGdeQXVyNjMwMjk0MTQ@._V1_SX300.jpg',
+  },
+  {
+    title: 'Le jour se lève',
+    director: 'Marcel Carné',
+    year: 1939,
+    imdbID: 'tt0031514',
+    poster:
+      'https://m.media-amazon.com/images/M/MV5BMjI2MTc2NzQyMl5BMl5BanBnXkFtZTgwNTg1MTMxMzE@._V1_SX300.jpg',
+  },
+  {
+    title: 'Le Million',
+    director: 'René Clair',
+    year: 1931,
+    imdbID: 'tt0022150',
+    poster:
+      'https://m.media-amazon.com/images/M/MV5BMjA1MTA3NjI3M15BMl5BanBnXkFtZTcwNTA3OTMyMQ@@._V1_SX300.jpg',
+  },
+  {
+    title: 'La Terra Trema',
+    director: 'Luchino Visconti',
+    year: 1948,
+    imdbID: 'tt0040866',
+    poster:
+      'https://m.media-amazon.com/images/M/MV5BMWQyNWE2OGYtZWYyNS00MjIzLTkyZGQtMjA4MzAzYjY2NGEwXkEyXkFqcGdeQXVyMzIzNDU1NTY@._V1_SX300.jpg',
+  },
+
 ]
 
 module.exports = filmData
