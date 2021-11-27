@@ -1,5 +1,14 @@
 require('dotenv').config()
-const bfi1962 = require('./mongodb/filmSeeders/1962')
+const { MongoClient } = require('mongodb')
+const connectionURL = process.env.MONGODB_URL
+const databaseName = process.env.DB_NAME
 
-console.log(process.env.MONGODB_URL)
-console.log(bfi1962)
+MongoClient.connect(connectionURL, { useNewUrlParser: true }, (error, client) => {
+    if (error) {
+        return console.log('Unable to connect to the database.')
+    }
+    const db = client.db(databaseName)
+
+    
+
+})

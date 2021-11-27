@@ -24,11 +24,12 @@ MongoClient.connect(connectionURL, { useNewUrlParser: true }, (error, client) =>
     const batchAdd = async (collectionName, collectionContent) => {
         const addTheFilms = await db.collection(collectionName).insertMany(collectionContent, error, result => {
             if (error) {
+                console.log(`There was an error adding ${collectionName}`)
                 return error
             }
+            console.log(`${collectionName} was successfully added.`)
             return result
         })
-        console.log(addTheFilms)
     }
 
     for (let i = 0; i < allOfThem.length; i++) {
