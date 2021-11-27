@@ -43,6 +43,33 @@ const userSchema = new mongoose.Schema({
             }
         }
     },
+    seenStatusCollection: [{
+        imdbID: {
+            type: String,
+            required: true
+        },
+        seenStatus: {
+            type: Boolean,
+            required: true
+        }        
+    }],
+    userSettings: [{
+        viewSet: {
+            type: String,
+            required: true,
+            default: 'all'
+        },
+        viewStyle: {
+            type: String,
+            required: true,
+            default: 'cards,',
+        },
+        filmSet: {
+            type: String,
+            required: true,
+            default: 'bfi2012'
+        }
+    }],
     tokens: [{
         token: {
             type: String,
