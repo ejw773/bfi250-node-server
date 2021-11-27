@@ -15,7 +15,8 @@ const filmSchema = new mongoose.Schema({
     },
     imdbID: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     poster: {
         type: String,
