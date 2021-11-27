@@ -13,14 +13,6 @@ const filmSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
-    bfiSet: {
-        type: String,
-        required: true
-    },
-    bfiRank: {
-        type: Number,
-        required: true
-    },
     imdbID: {
         type: String,
         required: true
