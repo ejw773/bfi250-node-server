@@ -5,6 +5,8 @@ const express = require('express')
 const User = require('./models/user')
 const Film = require('./models/film')
 const Rank = require('./models/rank')
+const viewStatus = require('./models/viewStatus')
+const ViewStatus = require('./models/viewStatus')
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -43,6 +45,9 @@ app.post('/users', (req, res) => {
         res.status(400).send(e)
     })
 })
+
+// Update Existing User
+app.patch('/user/:id', async (req, ))
 
 
 
@@ -124,6 +129,24 @@ app.get('/ranks/imdb/:imdbID', (req, res) => {
         res.status(400)
         res.send(e)
     })
+})
+
+
+// VIEWSTATUS
+// Read ALL status
+app.get('/viewstatus', (req, res) => {
+    res.send('get all the view status information')
+})
+
+// Post one status
+app.post('/viewstatus', (req, res) => {
+    const viewStatus = new ViewStatus({})
+    res.send(`Posting ${req.body.viewStatus} for film ${req.body.film} for user ${req.body.user}`)
+})
+
+// Nullify one status
+app.delete('/viewstatus', (req, res) => {
+    res.send(`Nullifying ${req.body.film} for user ${req.body.user}`)
 })
 
 app.listen(port, () => {
