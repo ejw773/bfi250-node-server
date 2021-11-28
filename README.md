@@ -2,7 +2,9 @@
 
 Using locally:
 
-In the root directory, create a '.env' file, with the following values:
+Clone to local repository, and run 'npm install' for dependencies. You will also need to set up MongoDB.
 
-MONGODB_URL=
-DB_NAME=
+In the root directory, create a '.env' file, with the following keys:
+
+MONGODB_URL
+DB_NAME
