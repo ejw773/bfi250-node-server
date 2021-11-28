@@ -4,6 +4,7 @@ const express = require('express')
 
 const User = require('./models/user')
 const Film = require('./models/film')
+const Rank = require('./models/rank-test')
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -11,7 +12,8 @@ const port = process.env.PORT || 3000
 app.use(express.json())
 
 
-
+// USERS
+// Read All Users
 app.get('/users', (req, res) => {
     User.find({}).then((users) => {
         res.send(users)
@@ -20,6 +22,7 @@ app.get('/users', (req, res) => {
     })
 })
 
+// Read User By ID
 app.get('/users/:id', (req, res) => {
     User.findById(req.params.id).then((user) => {
         if (!user) {
@@ -31,6 +34,7 @@ app.get('/users/:id', (req, res) => {
     })
 })
 
+// Create New User
 app.post('/users', (req, res) => {
     const user = new User(req.body)
     user.save().then(() => {
@@ -40,6 +44,10 @@ app.post('/users', (req, res) => {
     })
 })
 
+
+
+// FILMS
+// Get all films
 app.get('/films', (req, res) => {
     Film.find({}).then((films) => {
         res.send(films)
@@ -48,6 +56,7 @@ app.get('/films', (req, res) => {
     })
 })
 
+// Get one film by database ID
 app.get('/films/:id', (req, res) => {
     Film.findById(req.params.id).then((film) => {
         res.send(film)
@@ -56,39 +65,66 @@ app.get('/films/:id', (req, res) => {
     })
 })
 
+// Get one film by imdbID
 app.get('/films/imdb/:imdbid', (req, res) => {
     console.log(req.params.imdbid)
-    Film.find({ imdbID: req.params.imdbid }).then((films) => {
-        res.send(films)
+    Film.find({ imdbID: req.params.imdbid }).then((film) => {
+        res.send(film)
     }).catch((e) => {
         res.status(500).send()
     })
 })
 
+// Add new film
 app.post('/films', (req, res) => {
     const film = new Film(req.body)
-    film.save().then(() => {
-        res.status(201).res.send(film)
+    film.save().then((film) => {
+        res.status(201)
+        res.send(film)
     }).catch((e) => {
-        res.status(400).send(e)
+        res.status(400)
+        res.end(`Failed to save: ${e}`)
+    })
+})
+
+
+// RANKS
+// Get all ranks
+app.get('/ranks', (req, res) => {
+    Rank.find({})
+    .populate('film')
+    .then((ranks) => {
+        res.send(ranks)
+    }).catch((e) => {
+        res.status(400)
+        res.send(e)
+    })
+})
+
+// Get ranks by year
+app.get('/ranks/:bfiSet', (req, res) => {
+    console.log(req.params.bfiSet)
+    Rank.find({ bfiSet: req.params.bfiSet })
+    //.populate({path: 'film', model: Film})
+    .then((ranks) => {
+        res.send(ranks)
+    }).catch((e) => {
+        res.status(400)
+        res.send(e)
+    })
+})
+
+app.get('/ranks/:imdbID', (req, res) => {
+    console.log(req.params.imdbID)
+    Rank.find({ imdbID: req.params.imdbID })
+    .then((ranks) => {
+        res.send(ranks)
+    }).catch((e) => {
+        res.status(400)
+        res.send(e)
     })
 })
 
 app.listen(port, () => {
     console.log(`Server is up on port ${port}`)
 })
-
-
-// const { MongoClient } = require('mongodb')
-// const connectionURL = process.env.MONGODB_URL
-// const databaseName = process.env.DB_NAME
-
-// MongoClient.connect(connectionURL, { useNewUrlParser: true }, (error, client) => {
-//     if (error) {
-//         return console.log('Unable to connect to the database.')
-//     }
-//     const db = client.db(databaseName)
-
-    
-
-// })
