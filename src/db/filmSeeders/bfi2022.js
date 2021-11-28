@@ -1,8 +1,5 @@
-const bfi2022 = {
-    bfiSet: 'bfi2022',
-    filmRanks: [
+const bfi2022 = [
     
-    ]
-}
+]
 
 module.exports = bfi2022

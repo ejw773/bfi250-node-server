@@ -4,7 +4,7 @@ const express = require('express')
 
 const User = require('./models/user')
 const Film = require('./models/film')
-const Rank = require('./models/rank-test')
+const Rank = require('./models/rank')
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -105,7 +105,7 @@ app.get('/ranks', (req, res) => {
 app.get('/ranks/:bfiSet', (req, res) => {
     console.log(req.params.bfiSet)
     Rank.find({ bfiSet: req.params.bfiSet })
-    //.populate({path: 'film', model: Film})
+    .populate('film')
     .then((ranks) => {
         res.send(ranks)
     }).catch((e) => {
@@ -114,9 +114,10 @@ app.get('/ranks/:bfiSet', (req, res) => {
     })
 })
 
-app.get('/ranks/:imdbID', (req, res) => {
+app.get('/ranks/imdb/:imdbID', (req, res) => {
     console.log(req.params.imdbID)
     Rank.find({ imdbID: req.params.imdbID })
+    .populate('film')
     .then((ranks) => {
         res.send(ranks)
     }).catch((e) => {
