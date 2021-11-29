@@ -12,9 +12,9 @@ const port = process.env.PORT || 3000
 
 app.use(express.json())
 
-app.get('/', (req, res) => {
-    res.send('Welcome to the BFI 250 server.')
-})
+app.get('/', function(req, res){
+    res.sendFile(__dirname + '/endpoints.html');
+    });
 app.use(userRouter)
 app.use(filmRouter)
 app.use(rankRouter)
