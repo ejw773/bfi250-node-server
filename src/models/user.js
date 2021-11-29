@@ -2,6 +2,7 @@ const mongoose = require('mongoose')
 const validator = require('validator')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
+const ViewStatus = require('./viewStatus')
 
 const userSchema = new mongoose.Schema({
     name: {
@@ -54,6 +55,12 @@ const userSchema = new mongoose.Schema({
     timestamps: true
 })
 
+userSchema.virtual('viewStatus', {
+    ref: 'ViewStatus',
+    localField: '_id',
+    foreignField: 'owner'
+})
+
 // Remove some user info before sending back to browser
 userSchema.methods.toJSON = function () {
     const user = this
@@ -100,6 +107,13 @@ userSchema.pre('save', async function (next) {
     if (user.isModified('password')) {
         user.password = await bcrypt.hash(user.password, 8)
     }
+    next()
+})
+
+// Delete user viewStatus when user is removed
+userSchema.pre('remove', async function (next) {
+    const user = this
+    await ViewStatus.deleteMany({ owner: user._id })
     next()
 })
 

@@ -1,17 +1,48 @@
 const express = require('express')
 const ViewStatus = require('../models/viewStatus')
-const User = require('../models/user')
 const auth = require('../middleware/auth')
 const router = new express.Router()
 
-// VIEWSTATUS
-// Read ALL status
-router.get('/viewstatus', async (req, res) => {
-    res.send('get all the view status information')
+// Read all my viewStatus
+router.get('/viewStatus', auth, async (req, res) => {
+    try {
+        await req.user.populate('viewStatus')
+        res.send(req.user.viewStatus)
+    } catch (e) {
+        res.status = 500
+        res.send(e)
+    }
 })
 
+// Read one viewStatus by id
+router.get('/viewStatus/:id', auth, async (req, res) => {
+    try {
+        const viewStatus = await ViewStatus.findOne({ _id: req.params.id, owner: req.user._id })
+        if (!viewStatus) {
+            return res.status(404).send()
+        }
+        res.send(viewStatus)
+    } catch (e) {
+        res.status(500).send(e)
+    }
+})
+
+// Read one viewStatus by imdbID
+router.get('/viewStatus/film/:id', auth, async (req, res) => {
+    try {
+        const viewStatus = await ViewStatus.findOne({ film: req.params.id, owner: req.user._id })
+        if (!viewStatus) {
+            return res.status(404).send()
+        }
+        res.send(viewStatus)
+    } catch (e) {
+        res.status(500).send(e)
+    }
+})
+
+
 // Add or modify a status
-router.patch('/viewstatus', auth, async (req, res) => {
+router.post('/viewStatus', auth, async (req, res) => {
     const toUpdateKeys = Object.keys(req.body)
     const allowedUpdates = ['film', 'viewStatus']
     const isValidOperation = toUpdateKeys.every((itemToUpdate) => {
@@ -31,9 +62,9 @@ router.patch('/viewstatus', auth, async (req, res) => {
             })
             try {
                 await viewStatus.save()
-                res.status(201).send(viewStatus)
+                return res.status(201).send(viewStatus)
             } catch (e) {
-                res.status(400).send(e)
+                return res.status(400).send(e)
             }
         }
 
@@ -46,9 +77,25 @@ router.patch('/viewstatus', auth, async (req, res) => {
     }
 })
 
-// Delete one status
-router.delete('/viewstatus', auth, async (req, res) => {
+// Delete viewStatus by _id
+router.delete('/viewStatus/:id', auth, async (req, res) => {
+    try {
+        const viewStatus = await ViewStatus.findOneAndDelete({ _id: req.params.id, owner: req.user._id })
+        res.send(`Item Deleted: ${viewStatus}`)
+    } catch (e) {
+        res.status(500).send(e)
+    }
     res.send(`Nullifying ${req.body.film} for user ${req.body.user}`)
+})
+
+// Delete viewStatus by imdbID
+router.delete('/viewStatus/film/:imdbID', auth, async (req, res) => {
+    try {
+        const viewStatus = await ViewStatus.findOneAndDelete({ film: req.params.imdbID, owner: req.user._id })
+        res.send(`Item Deleted: ${viewStatus}`)        
+    } catch (e) {
+        res.status(500).send(e)
+    }
 })
 
 

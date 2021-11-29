@@ -3,17 +3,17 @@ const mongoose = require('mongoose')
 const viewStatusSchema = new mongoose.Schema({
         owner: {
             type: mongoose.Schema.Types.ObjectId,
+            required: true,
             ref: 'User',
         },
         film: {
-            type: mongoose.Schema.Types.ObjectId,
+            type: String,
             ref: 'Film',
         },
         viewStatus: {
             type: Boolean,
-            required: true,
-            default: null
-        }
+            required: true
+    }
 })
 
 const ViewStatus = mongoose.model('ViewStatus', viewStatusSchema)

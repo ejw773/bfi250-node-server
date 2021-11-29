@@ -81,7 +81,6 @@ router.patch('/users/me', auth, async (req, res) => {
 // Delete user
 router.delete('/users/me', auth, async (req, res) => {
     try {
-        // Note: the 'user' part of req.user is not coming from the original request, but from auth
         await req.user.remove()
         res.send(req.user)
     } catch (e) {
