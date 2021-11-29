@@ -14,8 +14,8 @@ const rankSchema = new mongoose.Schema({
             required: true
         },
         film: {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: 'Film',
+            type: String,
+            ref: 'Film'
         }
 })
 

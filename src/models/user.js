@@ -37,7 +37,12 @@ const userSchema = new mongoose.Schema({
     filmSet: {
         type: String,
         required: true,
-        default: 'bfi2012'
+        default: 'bfi2022'
+    },
+    admin: {
+        type: Boolean,
+        required: true,
+        default: false
     },
     tokens: [{
         token: {
@@ -57,7 +62,8 @@ userSchema.methods.toJSON = function () {
     delete userObject.password
     delete userObject.tokens
     delete userObject.avatar
-    delete userObject.userSettings
+    delete userObject.filmSet
+    delete userObject.admin
     delete userObject.createdAt
     delete userObject.updatedAt
 
