@@ -1,10 +1,10 @@
 # BFI 250 Progress Bar Server
 
+**BFI 250 Progress Bar: Watch the Greatest Films of All Time. Track Your Progess. Skip a Few.**
+
 ![image](link here)
 
 The backend for BFI 250 [Front End](https://github.com/ejw773/bfi250)
-
-**BFI 250 Progress Bar: Watch the Greatest Films of All Time. Track Your Progess. Skip a Few.**
 
 [Live website](https://bfi250.com/)
 
@@ -44,10 +44,7 @@ Run `npm install` or `yarn install` in your terminal.
 
 ### 4. Setup a database and add environment variables
 
-You will need to set up a [MongoDB](https://www.mongodb.com/) database. You will also need to create a .env file in the root directory, with the following keys:
-
-MONGODB_URL
-JWT_SECRET
+You will need to set up a [MongoDB](https://www.mongodb.com/) database. You will also need to create a .env file in the root directory, with the keys MONGODB_URL and JWT_SECRET.
 
 After each key, add '=' (without quotes). After MONGODB_URL=, paste the URL to your MongoDB database. You'll also need to create your own random JWT_SECRET string for authentication; this will be used by [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken).
 
