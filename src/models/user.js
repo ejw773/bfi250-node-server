@@ -38,7 +38,7 @@ const userSchema = new mongoose.Schema({
     filmSet: {
         type: String,
         required: true,
-        default: 'bfi2022'
+        default: 'bfi2012'
     },
     admin: {
         type: Boolean,
