@@ -2,10 +2,10 @@ require('dotenv').config()
 require('./db/mongoose')
 const express = require('express')
 
-const User = require('./models/user')
+const userRouter = require('./routers/user')
+
 const Film = require('./models/film')
 const Rank = require('./models/rank')
-const viewStatus = require('./models/viewStatus')
 const ViewStatus = require('./models/viewStatus')
 
 const app = express()
@@ -13,41 +13,7 @@ const port = process.env.PORT || 3000
 
 app.use(express.json())
 
-
-// USERS
-// Read All Users
-app.get('/users', (req, res) => {
-    User.find({}).then((users) => {
-        res.send(users)
-    }).catch((e) => {
-        res.status(500).send()
-    })
-})
-
-// Read User By ID
-app.get('/users/:id', (req, res) => {
-    User.findById(req.params.id).then((user) => {
-        if (!user) {
-            return res.status(404).send()
-        }
-        res.send(user)
-    }).catch((e) => {
-        res.status(500).send()
-    })
-})
-
-// Create New User
-app.post('/users', (req, res) => {
-    const user = new User(req.body)
-    user.save().then(() => {
-        res.status(201).send(user)
-    }).catch((e) => {
-        res.status(400).send(e)
-    })
-})
-
-// Update Existing User
-app.patch('/user/:id', async (req, ))
+app.use(userRouter)
 
 
 

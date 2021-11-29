@@ -8,3 +8,4 @@ In the root directory, create a '.env' file, with the following keys:
 
 MONGODB_URL
 DB_NAME
+JWT_SECRET

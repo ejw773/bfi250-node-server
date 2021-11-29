@@ -2,7 +2,6 @@ const mongoose = require('mongoose')
 const validator = require('validator')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
-const Task = require('./task')
 
 const userSchema = new mongoose.Schema({
     name: {
@@ -35,26 +34,22 @@ const userSchema = new mongoose.Schema({
             }
         }
     },
-    userSettings: [{
-        filmSet: {
-            type: String,
-            required: true,
-            default: 'bfi2012'
-        }
-    }],
+    filmSet: {
+        type: String,
+        required: true,
+        default: 'bfi2012'
+    },
     tokens: [{
         token: {
             type: String,
             required: true
         }
     }],
-    avatar: {
-        type: Buffer
-    }
 }, {
     timestamps: true
 })
 
+// Remove some user info before sending back to browser
 userSchema.methods.toJSON = function () {
     const user = this
     const userObject = user.toObject()
@@ -62,26 +57,27 @@ userSchema.methods.toJSON = function () {
     delete userObject.password
     delete userObject.tokens
     delete userObject.avatar
+    delete userObject.userSettings
+    delete userObject.createdAt
+    delete userObject.updatedAt
 
     return userObject
 }
 
-// userSchema.virtual('tasks', {
-//     ref: 'Task',
-//     localField: '_id',
-//     foreignField: 'owner'
-// })
-
+// Create JSON Web Token
+// Note: Methods are for use on the instance (user)
 userSchema.methods.generateAuthToken = async function () {
     const user = this
-    const token = jwt.sign({ _id: user._id.toString() }, 'thisismynewcourse')
+    const token = jwt.sign({ _id: user._id.toString() }, process.env.JWT_SECRET, { expiresIn: '7 days' })
     user.tokens = user.tokens.concat({ token })
     await user.save()
     return token
 }
 
+// Check email and password for login
+// Note: Statics are for use on the model (User)
 userSchema.statics.findByCredentials = async (email, password) => {
-    const user = await User.findOne({ email})
+    const user = await User.findOne({ email })
     if (!user) {
         throw new Error('Unable to login')
     }
@@ -92,17 +88,12 @@ userSchema.statics.findByCredentials = async (email, password) => {
     return user
 }
 
+// Hash password before saving
 userSchema.pre('save', async function (next) {
-    const user = this;
+    const user = this
     if (user.isModified('password')) {
         user.password = await bcrypt.hash(user.password, 8)
     }
-    next()
-})
-
-userSchema.pre('remove', async function (next) {
-    const user = this
-    await Task.deleteMany({ owner: user._id })
     next()
 })
 
