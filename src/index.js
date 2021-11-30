@@ -1,6 +1,9 @@
 require('dotenv').config()
 require('./db/mongoose')
 const express = require('express')
+const cors = require('cors')
+
+app.use(cors())
 
 const userRouter = require('./routers/user')
 const filmRouter = require('./routers/film')
