@@ -3,8 +3,6 @@ require('./db/mongoose')
 const express = require('express')
 const cors = require('cors')
 
-app.use(cors())
-
 const userRouter = require('./routers/user')
 const filmRouter = require('./routers/film')
 const rankRouter = require('./routers/rank')
@@ -14,6 +12,8 @@ const app = express()
 const port = process.env.PORT || 3000
 
 app.use(express.json())
+
+app.use(cors())
 
 app.get('/', function(req, res){
     res.sendFile(__dirname + '/endpoints.html');
