@@ -20,7 +20,6 @@ router.get('/films/:id', (req, res) => {
 })
 
 router.get('/films/imdb/:imdbid', (req, res) => {
-    console.log(req.params.imdbid)
     Film.find({ imdbID: req.params.imdbid }).then((film) => {
         res.send(film)
     }).catch((e) => {

@@ -18,11 +18,21 @@ router.get('/ranks', (req, res) => {
 
 // Get ranks by year
 router.get('/ranks/:bfiSet', (req, res) => {
-    console.log(req.params.bfiSet)
     Rank.find({ bfiSet: req.params.bfiSet })
     .populate('film')
     .then((ranks) => {
-        res.send(ranks)
+        const shapedData = ranks.map(film => {return {
+            bfiRank: film.bfiRank,
+            imdbID: film.imdbID,
+            title: film.film.title,
+            director: film.film.director,
+            year: film.film.year,
+            poster: film.film.poster   
+        }})
+        const labeledData = {
+            [req.params.bfiSet]: [...shapedData]
+        }
+        res.send(labeledData)
     }).catch((e) => {
         res.status(400)
         res.send(e)
@@ -31,7 +41,6 @@ router.get('/ranks/:bfiSet', (req, res) => {
 
 // Get ranks by an imdbID
 router.get('/ranks/imdb/:imdbID', (req, res) => {
-    console.log(req.params.imdbID)
     Rank.find({ imdbID: req.params.imdbID })
     .populate('film')
     .then((ranks) => {
