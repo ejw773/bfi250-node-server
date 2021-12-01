@@ -7,7 +7,8 @@ const router = new express.Router()
 router.get('/viewStatus', auth, async (req, res) => {
     try {
         await req.user.populate('viewStatus')
-        res.send(req.user.viewStatus)
+        const shapedData = req.user.viewStatus.map(viewStatus => {return {[viewStatus.film]: viewStatus.viewStatus}})
+        res.send(shapedData)
     } catch (e) {
         res.status = 500
         res.send(e)
