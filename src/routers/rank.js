@@ -65,10 +65,7 @@ router.get('/ranks/my/:bfiSet', auth, async (req, res) => {
                     const thisMovie = shapedData[i].imdbID;
                     const thisStat = shapedStatus[j].imdbID
                     if (thisMovie === thisStat) {
-                        console.log('FOUND IT!')
-                        console.log(thisMovie)
                         shapedData[i].viewStatus = shapedStatus[j].viewStatus
-                        console.log(shapedData[i])
                     }
                 }
             }
