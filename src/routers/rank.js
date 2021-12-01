@@ -42,6 +42,52 @@ router.get('/ranks/:bfiSet', (req, res) => {
     })
 })
 
+router.get('/ranks/my/:bfiSet', auth, async (req, res) => {
+    try {
+        await req.user.populate('viewStatus')
+        const myViewStatus = await req.user.viewStatus
+        const shapedStatus = await myViewStatus.map(stat => {return {
+            imdbID: stat.film,
+            viewStatus: stat.viewStatus
+        }})
+        const filmData = await Rank.find({ bfiSet: req.params.bfiSet }).populate('film')
+        const shapedData = await filmData.map(film => {return {
+                bfiRank: film.bfiRank,
+                imdbID: film.imdbID,
+                title: film.film.title,
+                director: film.film.director,
+                year: film.film.year,
+                poster: film.film.poster   
+        }})
+        const mergedData = (shapedStatus, shapedData) => {
+            for (i = 0; i < shapedData.length; i++) {
+                for (j = 0; j < shapedStatus.length; j++) {
+                    const thisMovie = shapedData[i].imdbID;
+                    const thisStat = shapedStatus[j].imdbID
+                    if (thisMovie === thisStat) {
+                        console.log('FOUND IT!')
+                        console.log(thisMovie)
+                        shapedData[i].viewStatus = shapedStatus[j].viewStatus
+                        console.log(shapedData[i])
+                    }
+                }
+            }
+        }
+        mergedData(shapedStatus, shapedData)
+            const sortedData = shapedData.sort((a, b) => {
+                return a.bfiRank - b.bfiRank
+            })
+            const labeledData = {
+                [req.params.bfiSet]: [...sortedData]
+            }
+            res.send(labeledData)    
+    } catch (e) {
+        res.status(400)
+        res.send(e)
+    }
+})
+
+
 // Get ranks by an imdbID
 router.get('/ranks/imdb/:imdbID', (req, res) => {
     Rank.find({ imdbID: req.params.imdbID })
