@@ -29,8 +29,11 @@ router.get('/ranks/:bfiSet', (req, res) => {
             year: film.film.year,
             poster: film.film.poster   
         }})
+        const sortedData = shapedData.sort((a, b) => {
+            return a.bfiRank - b.bfiRank
+        })
         const labeledData = {
-            [req.params.bfiSet]: [...shapedData]
+            [req.params.bfiSet]: [...sortedData]
         }
         res.send(labeledData)
     }).catch((e) => {
