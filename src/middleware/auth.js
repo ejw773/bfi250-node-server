@@ -3,6 +3,7 @@ const jwt = require('jsonwebtoken')
 const User = require('../models/user')
 
 const auth = async (req, res, next) => {
+    console.log(req)
     try {
         const token = req.header('Authorization').replace('Bearer ', '')
         // Decode to (1) get the ID and (2) verify that the token is valid
