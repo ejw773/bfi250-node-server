@@ -29,14 +29,16 @@ router.get('/films/imdb/:imdbid', (req, res) => {
 })
 
 router.post('/films', (req, res) => {
-    const film = new Film(req.body)
-    film.save().then((film) => {
-        res.status(201)
-        res.send(film)
-    }).catch((e) => {
-        res.status(400)
-        res.end(`Failed to save: ${e}`)
-    })
+    res.status(503)
+    res.send('Currently unavailble')
+    // const film = new Film(req.body)
+    // film.save().then((film) => {
+    //     res.status(201)
+    //     res.send(film)
+    // }).catch((e) => {
+    //     res.status(400)
+    //     res.end(`Failed to save: ${e}`)
+    // })
 })
 
 module.exports = router
