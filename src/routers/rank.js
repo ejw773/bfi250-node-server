@@ -32,7 +32,6 @@ router.get('/ranks/:bfiSet', (req, res) => {
         const labeledData = {
             [req.params.bfiSet]: [...shapedData]
         }
-        console.log(labeledData)
         res.send(labeledData)
     }).catch((e) => {
         res.status(400)
@@ -42,7 +41,6 @@ router.get('/ranks/:bfiSet', (req, res) => {
 
 // Get ranks by an imdbID
 router.get('/ranks/imdb/:imdbID', (req, res) => {
-    console.log(req.params.imdbID)
     Rank.find({ imdbID: req.params.imdbID })
     .populate('film')
     .then((ranks) => {
