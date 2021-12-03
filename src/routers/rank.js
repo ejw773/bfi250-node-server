@@ -74,10 +74,7 @@ router.get('/ranks/my/:bfiSet', auth, async (req, res) => {
             const sortedData = shapedData.sort((a, b) => {
                 return a.bfiRank - b.bfiRank
             })
-            const labeledData = {
-                [req.params.bfiSet]: [...sortedData]
-            }
-            res.send(labeledData)    
+            res.send(sortedData)    
     } catch (e) {
         res.status(400)
         res.send(e)
