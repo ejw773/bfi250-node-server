@@ -24,6 +24,9 @@ app.use(morgan('combined', { stream: accessLogStream }))
 app.get('/', function(req, res){
     res.sendFile(__dirname + '/endpoints.html');
     });
+app.get('/logs', function(req, res) {
+    res.sendFile(__dirname + '/access.log')
+})
 app.use(userRouter)
 app.use(filmRouter)
 app.use(rankRouter)
