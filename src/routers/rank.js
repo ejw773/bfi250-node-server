@@ -2,6 +2,7 @@ const express = require('express')
 const Rank = require('../models/rank')
 const auth = require('../middleware/auth')
 const router = new express.Router()
+const rankHelper = require('./rankHelper')
 
 // RANKS
 // Get all ranks
@@ -40,6 +41,34 @@ router.get('/ranks/:bfiSet', (req, res) => {
         res.status(400)
         res.send(e)
     })
+})
+
+// Get all ranks, including film data, all years
+router.get('/ranks/all/withfilms', async (req, res) => {
+    try {
+        const bfi1952 = await rankHelper('bfi1952')
+        const bfi1962 = await rankHelper('bfi1962')
+        const bfi1972 = await rankHelper('bfi1972')
+        const bfi1982 = await rankHelper('bfi1982')
+        const bfi1992 = await rankHelper('bfi1992')
+        const bfi2002 = await rankHelper('bfi2002')
+        const bfi2012 = await rankHelper('bfi2012')
+        const bfi2022 = await rankHelper('bfi2022')
+        const filmData = {
+            bfi1952,
+            bfi1962,
+            bfi1972,
+            bfi1982,
+            bfi1992,
+            bfi2002,
+            bfi2012,
+            bfi2022
+        }
+        res.send(filmData)            
+    } catch (e) {
+        res.status(400)
+        res.send(e)
+    }
 })
 
 router.get('/ranks/my/:bfiSet', auth, async (req, res) => {
