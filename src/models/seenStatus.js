@@ -16,6 +16,6 @@ const seenStatusSchema = new mongoose.Schema({
     }
 })
 
-const ViewStatus = mongoose.model('ViewStatus', seenStatusSchema)
+const SeenStatus = mongoose.model('SeenStatus', seenStatusSchema)
 
-module.exports = ViewStatus
+module.exports = SeenStatus

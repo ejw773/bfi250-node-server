@@ -1,5 +1,5 @@
 const express = require('express')
-const ViewStatus = require('../models/seenStatus')
+const SeenStatus = require('../models/seenStatus')
 const auth = require('../middleware/auth')
 const router = new express.Router()
 
@@ -18,7 +18,7 @@ router.get('/seenStatus', auth, async (req, res) => {
 // Read one seenStatus by id
 router.get('/seenStatus/:id', auth, async (req, res) => {
     try {
-        const seenStatus = await ViewStatus.findOne({ _id: req.params.id, owner: req.user._id })
+        const seenStatus = await SeenStatus.findOne({ _id: req.params.id, owner: req.user._id })
         if (!seenStatus) {
             return res.status(404).send()
         }
@@ -31,7 +31,7 @@ router.get('/seenStatus/:id', auth, async (req, res) => {
 // Read one seenStatus by imdbID
 router.get('/seenStatus/film/:id', auth, async (req, res) => {
     try {
-        const seenStatus = await ViewStatus.findOne({ film: req.params.id, owner: req.user._id })
+        const seenStatus = await SeenStatus.findOne({ film: req.params.id, owner: req.user._id })
         if (!seenStatus) {
             return res.status(404).send()
         }
@@ -53,11 +53,11 @@ router.post('/seenStatus', auth, async (req, res) => {
         return res.status(400).send({error: 'Invalid operation'})
     }
     try {
-        const seenStatus = await ViewStatus.findOne({ film: req.params.id, owner: req.user._id })
+        const seenStatus = await SeenStatus.findOne({ film: req.params.id, owner: req.user._id })
 
         // If seenStatus does not exist, create it
         if (!seenStatus) {
-            const seenStatus = new ViewStatus({
+            const seenStatus = new SeenStatus({
                 ...req.body,
                 owner: req.user._id
             })
@@ -81,7 +81,7 @@ router.post('/seenStatus', auth, async (req, res) => {
 // Delete seenStatus by _id
 router.delete('/seenStatus/:id', auth, async (req, res) => {
     try {
-        const seenStatus = await ViewStatus.findOneAndDelete({ _id: req.params.id, owner: req.user._id })
+        const seenStatus = await SeenStatus.findOneAndDelete({ _id: req.params.id, owner: req.user._id })
         res.send(`Item Deleted: ${seenStatus}`)
     } catch (e) {
         res.status(500).send(e)
@@ -92,7 +92,7 @@ router.delete('/seenStatus/:id', auth, async (req, res) => {
 // Delete seenStatus by imdbID
 router.delete('/seenStatus/film/:imdbID', auth, async (req, res) => {
     try {
-        const seenStatus = await ViewStatus.findOneAndDelete({ film: req.params.imdbID, owner: req.user._id })
+        const seenStatus = await SeenStatus.findOneAndDelete({ film: req.params.imdbID, owner: req.user._id })
         res.send(`Item Deleted: ${seenStatus}`)        
     } catch (e) {
         res.status(500).send(e)

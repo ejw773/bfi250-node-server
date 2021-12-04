@@ -74,8 +74,8 @@ router.get('/ranks/all/withfilms', async (req, res) => {
 router.get('/ranks/my/:bfiSet', auth, async (req, res) => {
     try {
         await req.user.populate('seenStatus')
-        const myViewStatus = await req.user.seenStatus
-        const shapedStatus = await myViewStatus.map(stat => {return {
+        const mySeenStatus = await req.user.seenStatus
+        const shapedStatus = await mySeenStatus.map(stat => {return {
             imdbID: stat.film,
             seenStatus: stat.seenStatus
         }})

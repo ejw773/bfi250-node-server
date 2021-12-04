@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const validator = require('validator')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
-const ViewStatus = require('./seenStatus')
+const SeenStatus = require('./seenStatus')
 
 const userSchema = new mongoose.Schema({
     name: {
@@ -56,7 +56,7 @@ const userSchema = new mongoose.Schema({
 })
 
 userSchema.virtual('seenStatus', {
-    ref: 'ViewStatus',
+    ref: 'SeenStatus',
     localField: '_id',
     foreignField: 'owner'
 })
@@ -112,7 +112,7 @@ userSchema.pre('save', async function (next) {
 // Delete user seenStatus when user is removed
 userSchema.pre('remove', async function (next) {
     const user = this
-    await ViewStatus.deleteMany({ owner: user._id })
+    await SeenStatus.deleteMany({ owner: user._id })
     next()
 })
 
