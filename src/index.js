@@ -9,7 +9,7 @@ const cors = require('cors')
 const userRouter = require('./routers/user')
 const filmRouter = require('./routers/film')
 const rankRouter = require('./routers/rank')
-const viewStatusRouter = require('./routers/viewStatus')
+const seenStatusRouter = require('./routers/seenStatus')
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -30,7 +30,7 @@ app.get('/logs', function(req, res) {
 app.use(userRouter)
 app.use(filmRouter)
 app.use(rankRouter)
-app.use(viewStatusRouter)
+app.use(seenStatusRouter)
 
 app.listen(port, () => {
     console.log(`Server is up on port ${port}`)
