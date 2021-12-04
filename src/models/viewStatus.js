@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const viewStatusSchema = new mongoose.Schema({
+const seenStatusSchema = new mongoose.Schema({
         owner: {
             type: mongoose.Schema.Types.ObjectId,
             required: true,
@@ -10,12 +10,12 @@ const viewStatusSchema = new mongoose.Schema({
             type: String,
             ref: 'Film',
         },
-        viewStatus: {
+        seenStatus: {
             type: Boolean,
             required: true
     }
 })
 
-const ViewStatus = mongoose.model('ViewStatus', viewStatusSchema)
+const ViewStatus = mongoose.model('ViewStatus', seenStatusSchema)
 
 module.exports = ViewStatus

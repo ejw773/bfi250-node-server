@@ -1,13 +1,13 @@
 const express = require('express')
-const ViewStatus = require('../models/viewStatus')
+const ViewStatus = require('../models/seenStatus')
 const auth = require('../middleware/auth')
 const router = new express.Router()
 
-// Read all my viewStatus
-router.get('/viewStatus', auth, async (req, res) => {
+// Read all my seenStatus
+router.get('/seenStatus', auth, async (req, res) => {
     try {
-        await req.user.populate('viewStatus')
-        const shapedData = req.user.viewStatus.map(viewStatus => {return {[viewStatus.film]: viewStatus.viewStatus}})
+        await req.user.populate('seenStatus')
+        const shapedData = req.user.seenStatus.map(seenStatus => {return {[seenStatus.film]: seenStatus.seenStatus}})
         res.send(shapedData)
     } catch (e) {
         res.status = 500
@@ -15,27 +15,27 @@ router.get('/viewStatus', auth, async (req, res) => {
     }
 })
 
-// Read one viewStatus by id
-router.get('/viewStatus/:id', auth, async (req, res) => {
+// Read one seenStatus by id
+router.get('/seenStatus/:id', auth, async (req, res) => {
     try {
-        const viewStatus = await ViewStatus.findOne({ _id: req.params.id, owner: req.user._id })
-        if (!viewStatus) {
+        const seenStatus = await ViewStatus.findOne({ _id: req.params.id, owner: req.user._id })
+        if (!seenStatus) {
             return res.status(404).send()
         }
-        res.send(viewStatus)
+        res.send(seenStatus)
     } catch (e) {
         res.status(500).send(e)
     }
 })
 
-// Read one viewStatus by imdbID
-router.get('/viewStatus/film/:id', auth, async (req, res) => {
+// Read one seenStatus by imdbID
+router.get('/seenStatus/film/:id', auth, async (req, res) => {
     try {
-        const viewStatus = await ViewStatus.findOne({ film: req.params.id, owner: req.user._id })
-        if (!viewStatus) {
+        const seenStatus = await ViewStatus.findOne({ film: req.params.id, owner: req.user._id })
+        if (!seenStatus) {
             return res.status(404).send()
         }
-        res.send(viewStatus)
+        res.send(seenStatus)
     } catch (e) {
         res.status(500).send(e)
     }
@@ -43,9 +43,9 @@ router.get('/viewStatus/film/:id', auth, async (req, res) => {
 
 
 // Add or modify a status
-router.post('/viewStatus', auth, async (req, res) => {
+router.post('/seenStatus', auth, async (req, res) => {
     const toUpdateKeys = Object.keys(req.body)
-    const allowedUpdates = ['film', 'viewStatus']
+    const allowedUpdates = ['film', 'seenStatus']
     const isValidOperation = toUpdateKeys.every((itemToUpdate) => {
         return allowedUpdates.includes(itemToUpdate)
     })
@@ -53,47 +53,47 @@ router.post('/viewStatus', auth, async (req, res) => {
         return res.status(400).send({error: 'Invalid operation'})
     }
     try {
-        const viewStatus = await ViewStatus.findOne({ film: req.params.id, owner: req.user._id })
+        const seenStatus = await ViewStatus.findOne({ film: req.params.id, owner: req.user._id })
 
-        // If viewStatus does not exist, create it
-        if (!viewStatus) {
-            const viewStatus = new ViewStatus({
+        // If seenStatus does not exist, create it
+        if (!seenStatus) {
+            const seenStatus = new ViewStatus({
                 ...req.body,
                 owner: req.user._id
             })
             try {
-                await viewStatus.save()
-                return res.status(201).send(viewStatus)
+                await seenStatus.save()
+                return res.status(201).send(seenStatus)
             } catch (e) {
                 return res.status(400).send(e)
             }
         }
 
-        // If viewStatus exists, update it
-        toUpdateKeys.forEach((itemToUpdate) => viewStatus[itemToUpdate] = req.body[itemToUpdate])
-        await viewStatus.save()
-        res.send(viewStatus)
+        // If seenStatus exists, update it
+        toUpdateKeys.forEach((itemToUpdate) => seenStatus[itemToUpdate] = req.body[itemToUpdate])
+        await seenStatus.save()
+        res.send(seenStatus)
     } catch (e) {
         res.status(400).send(e)
     }
 })
 
-// Delete viewStatus by _id
-router.delete('/viewStatus/:id', auth, async (req, res) => {
+// Delete seenStatus by _id
+router.delete('/seenStatus/:id', auth, async (req, res) => {
     try {
-        const viewStatus = await ViewStatus.findOneAndDelete({ _id: req.params.id, owner: req.user._id })
-        res.send(`Item Deleted: ${viewStatus}`)
+        const seenStatus = await ViewStatus.findOneAndDelete({ _id: req.params.id, owner: req.user._id })
+        res.send(`Item Deleted: ${seenStatus}`)
     } catch (e) {
         res.status(500).send(e)
     }
     res.send(`Nullifying ${req.body.film} for user ${req.body.user}`)
 })
 
-// Delete viewStatus by imdbID
-router.delete('/viewStatus/film/:imdbID', auth, async (req, res) => {
+// Delete seenStatus by imdbID
+router.delete('/seenStatus/film/:imdbID', auth, async (req, res) => {
     try {
-        const viewStatus = await ViewStatus.findOneAndDelete({ film: req.params.imdbID, owner: req.user._id })
-        res.send(`Item Deleted: ${viewStatus}`)        
+        const seenStatus = await ViewStatus.findOneAndDelete({ film: req.params.imdbID, owner: req.user._id })
+        res.send(`Item Deleted: ${seenStatus}`)        
     } catch (e) {
         res.status(500).send(e)
     }

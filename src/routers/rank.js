@@ -73,11 +73,11 @@ router.get('/ranks/all/withfilms', async (req, res) => {
 
 router.get('/ranks/my/:bfiSet', auth, async (req, res) => {
     try {
-        await req.user.populate('viewStatus')
-        const myViewStatus = await req.user.viewStatus
+        await req.user.populate('seenStatus')
+        const myViewStatus = await req.user.seenStatus
         const shapedStatus = await myViewStatus.map(stat => {return {
             imdbID: stat.film,
-            viewStatus: stat.viewStatus
+            seenStatus: stat.seenStatus
         }})
         const filmData = await Rank.find({ bfiSet: req.params.bfiSet }).populate('film')
         const shapedData = await filmData.map(film => {return {
@@ -94,7 +94,7 @@ router.get('/ranks/my/:bfiSet', auth, async (req, res) => {
                     const thisMovie = shapedData[i].imdbID;
                     const thisStat = shapedStatus[j].imdbID
                     if (thisMovie === thisStat) {
-                        shapedData[i].viewStatus = shapedStatus[j].viewStatus
+                        shapedData[i].seenStatus = shapedStatus[j].seenStatus
                     }
                 }
             }
