@@ -3,7 +3,6 @@ const Rank = require('../models/rank')
 const rankHelper = async (filmSet) => {
     try {
         const thisFilmSet = await Rank.find({ bfiSet: filmSet }).populate('film')
-        console.log(thisFilmSet)
         const shapedData = await thisFilmSet.map(film => {return {
                 bfiRank: film.bfiRank,
                 imdbID: film.imdbID,

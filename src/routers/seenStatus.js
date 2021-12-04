@@ -53,8 +53,7 @@ router.post('/seenStatus', auth, async (req, res) => {
         return res.status(400).send({error: 'Invalid operation'})
     }
     try {
-        const seenStatus = await SeenStatus.findOne({ film: req.params.id, owner: req.user._id })
-
+        const seenStatus = await SeenStatus.findOne({ film: req.body.film, owner: req.user._id })
         // If seenStatus does not exist, create it
         if (!seenStatus) {
             const seenStatus = new SeenStatus({
