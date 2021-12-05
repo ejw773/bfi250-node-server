@@ -8,7 +8,8 @@ router.get('/seenStatus', auth, async (req, res) => {
     try {
         await req.user.populate('seenStatus')
         const shapedData = req.user.seenStatus.map(seenStatus => {return {[seenStatus.film]: seenStatus.seenStatus}})
-        res.send(shapedData)
+        const allStatus = Object.assign({}, ...shapedData)
+        res.send(allStatus)
     } catch (e) {
         res.status = 500
         res.send(e)
