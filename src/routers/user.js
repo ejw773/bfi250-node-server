@@ -71,7 +71,7 @@ router.get('/users/me', auth, async (req, res) => {
 // Update user profile information
 router.patch('/users/me', auth, async (req, res) => {
     const toUpdateKeys = Object.keys(req.body)
-    const allowedUpdates = ['name', 'email', 'password', 'userSettings']
+    const allowedUpdates = ['name', 'email', 'password', 'filmSet']
     const isValidOperation = toUpdateKeys.every((itemToUpdate) => {
         return allowedUpdates.includes(itemToUpdate)
     })
