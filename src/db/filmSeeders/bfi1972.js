@@ -53,7 +53,7 @@ const bfi1972 = [
     bfiSet: 'bfi1972',
     bfiRank: 11,
     imdbID: 'tt0050986',
-  }
-]
+  },
+];
 
-module.exports = bfi1972
+module.exports = bfi1972;
