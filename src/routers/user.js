@@ -17,7 +17,7 @@ router.post('/users', async (req, res) => {
         }
         res.status(201).send(userInfo)
     } catch (e) {
-        res.status(400).send(e)
+        res.status(400).send('Creating New Account Failed')
     }
 })
 
@@ -34,7 +34,7 @@ router.post('/users/login', async (req, res) => {
         }
         res.send(userInfo)
     } catch (e) {
-        res.status(400).send()
+        res.status(400).send('Login Failed')
     }
 })
 
@@ -48,7 +48,7 @@ router.post('/users/logout', auth, async (req, res) => {
         res.send('Successfully logged out.')
     } catch (e) {
         res.status(500)
-        res.send()
+        res.send('Log Out Failed')
     }
 })
 
@@ -59,7 +59,7 @@ router.post('/users/logoutAll', auth, async (req, res) => {
         await req.user.save()
         res.send('Successfully logged out of all devices.')
     } catch (e) {
-        res.status(500).send()
+        res.status(500).send('Log Out Failed')
     }
 })
 
@@ -86,7 +86,7 @@ router.patch('/users/me', auth, async (req, res) => {
         await req.user.save()
         res.send(req.user)
     } catch (e) {
-        res.status(400).send(e)
+        res.status(400).send('Updating Profile Failed')
     }
 })
 
@@ -96,7 +96,7 @@ router.delete('/users/me', auth, async (req, res) => {
         await req.user.remove()
         res.send(req.user)
     } catch (e) {
-        res.status(500).send(e)
+        res.status(500).send('Account Deletion Failed')
     }
 })
 
