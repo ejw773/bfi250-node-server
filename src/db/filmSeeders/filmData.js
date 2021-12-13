@@ -68,8 +68,7 @@ const filmData = [
     director: 'Carl Theodor Dreyer',
     year: 1928,
     imdbID: 'tt0019254',
-    poster:
-      'https://images-na.ssl-images-amazon.com/images/I/51hNEZ8jDtL.jpg',
+    poster: 'https://images-na.ssl-images-amazon.com/images/I/51hNEZ8jDtL.jpg',
   },
   {
     title: '8½',
@@ -2032,7 +2031,6 @@ const filmData = [
     poster:
       'https://m.media-amazon.com/images/M/MV5BMWQyNWE2OGYtZWYyNS00MjIzLTkyZGQtMjA4MzAzYjY2NGEwXkEyXkFqcGdeQXVyMzIzNDU1NTY@._V1_SX300.jpg',
   },
+];
 
-]
-
-module.exports = filmData
+module.exports = filmData;
